@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="kaikebaUtils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/kaikebaUtils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
