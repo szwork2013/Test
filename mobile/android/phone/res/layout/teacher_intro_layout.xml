@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="14dp"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <com.kaikeba.common.widget.CircleView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teacher_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:border_width="1dp"
+                app:border_color="#f0f0f0"
+                android:background="@drawable/head_teacher"
+                />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teacher_name"
+                    android:text="王晓东"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#45494c"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清华大学经济管理学院教授"
+                    android:id="@+id/course_title"
+                    android:layout_marginTop="12dp"
+                    android:textSize="14sp"
+                    android:textColor="#616466"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

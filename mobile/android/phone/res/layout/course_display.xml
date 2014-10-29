@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="@color/course_bg_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/micro_intro_official"
+            android:textColor="#737380"
+            android:textSize="12sp"/>
+
+    <ScrollView
+            android:id="@+id/sv_container"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_header_title"
+            android:layout_width="fill_parent"
+            android:scrollbars="none"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:id="@+id/course_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/course_bg_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical"
+                >
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/loading_layout"/>
+    <include layout="@layout/loading_fial_layout"/>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/more_content_padding_left"
+                android:orientation="vertical">
+
+    <ImageView android:id="@+id/more_blue_bar"
+               android:layout_width="@dimen/more_introduction_blue_bar_width"
+               android:layout_height="@dimen/more_introduction_blue_bar_height"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_blue_bar"
+               android:layout_marginTop="@dimen/more_introduction_blue_bar_margin_top"
+               android:layout_marginLeft="@dimen/more_introduction_blue_bar_margin_left"
+            />
+
+    <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如需帮助或有问题反馈，请联系："
+            android:textColor="@color/more_tag_font_color"
+            android:textSize="@dimen/more_introduction_title_text_size"
+            android:layout_marginLeft="@dimen/more_introduction_title_margin_left"
+            android:layout_marginTop="@dimen/more_introduction_title_margin_top"
+            android:layout_toRightOf="@id/more_blue_bar"
+            />
+
+    <TextView android:id="@+id/more_text_line_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="客服QQ："
+              android:textSize="@dimen/more_contact_small_title_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_blue_bar"
+              android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            />
+
+    <TextView android:id="@+id/more_text_line_1_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="客服电话："
+              android:textSize="@dimen/more_contact_small_title_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignTop="@id/more_text_line_1"
+              android:layout_toRightOf="@id/more_text_line_1"
+              android:layout_marginLeft="@dimen/more_contact_margin_left"
+            />
+
+    <TextView android:id="@+id/more_text_line_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="800054308"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_1"
+              android:layout_marginTop="@dimen/more_introduction_content_line_gap"
+            />
+
+    <TextView android:id="@+id/more_text_line_2_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="010-57183953"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignTop="@id/more_text_line_2"
+              android:layout_alignLeft="@id/more_text_line_1_2"
+            />
+
+    <TextView android:id="@+id/more_text_line_3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="50435155"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_2"
+              android:layout_marginTop="@dimen/more_introduction_content_line_gap"
+            />
+
+    <TextView android:id="@+id/more_text_line_3_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="010-59426125"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignTop="@id/more_text_line_3"
+              android:layout_alignLeft="@id/more_text_line_1_2"
+            />
+
+    <TextView android:id="@+id/more_text_line_4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="(工作日 9:00--18:00)"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_3"
+              android:layout_marginTop="@dimen/more_introduction_content_line_gap"
+            />
+
+    <TextView android:id="@+id/more_text_line_4_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="(工作日 9:00--18:00)"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignTop="@id/more_text_line_4"
+              android:layout_alignLeft="@id/more_text_line_1_2"
+            />
+
+    <TextView android:id="@+id/more_text_line_5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="客服邮箱："
+              android:textSize="@dimen/more_contact_small_title_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_4"
+              android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            />
+
+    <TextView android:id="@+id/more_text_line_6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="kefu@kaikeba.com"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_5"
+              android:layout_marginTop="@dimen/more_introduction_content_line_gap"
+            />
+
+    <ImageView android:id="@+id/more_logo"
+               android:layout_width="@dimen/more_guide_logo_width"
+               android:layout_height="@dimen/more_guide_logo_height"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_logo"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginRight="60dp"
+               android:layout_marginBottom="30dp"
+            />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_more_vertical_line_height"
+            android:id="@+id/imageView"
+            android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            android:src="@drawable/vertical_line"
+            android:layout_toRightOf="@+id/more_text_line_1"
+            android:layout_below="@+id/title_label"
+            android:layout_marginLeft="@dimen/tab_more_vertical_line_margin_left"/>
+
+</RelativeLayout>

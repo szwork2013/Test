@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/setting_bg"
+              android:padding="15dp">
+
+    <TextView
+            android:id="@+id/tv_quiz_question_judge_false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:text="一切的女里都必须落脚于答案中"
+            android:textColor="@color/shadow_black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+</LinearLayout>

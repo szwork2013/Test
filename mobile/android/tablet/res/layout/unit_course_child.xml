@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e6e6e6"
+        >
+
+    <TextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/course_ImView"
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="@color/unit_child_lock"
+            android:textSize="16sp"/>
+
+    <ImageView
+            android:id="@+id/course_ImView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="52dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            />
+
+    <TextView
+            android:id="@+id/load_all_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/download_title"
+            android:background="@drawable/button_dwonloadcourse"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/iv_in"
+            android:text="@string/load_video"
+            />
+
+    <TextView
+            android:id="@+id/load_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:layout_toLeftOf="@id/load_all_video"
+            android:textSize="16sp"
+            android:text="@string/load_video"
+            />
+
+    <ImageView
+            android:id="@+id/iv_in"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/unit_item_arrow"/>
+</RelativeLayout>

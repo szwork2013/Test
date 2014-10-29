@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical"
+              android:orientation="vertical"
+              android:background="#e6e6e6">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <TextView
+                android:id="@+id/tv1"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@+id/tv2"
+                android:background="@drawable/activity_announcement"
+                android:gravity="center"
+                android:text="作业测验"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv2"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/activity_assigment"
+                android:gravity="center"
+                android:text="练习测验"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv3"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/tv2"
+                android:background="@drawable/activity_discuss"
+                android:gravity="center"
+                android:text="调查"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+    <include
+            layout="@layout/loading_layout"
+            />
+    <ListView
+            android:id="@+id/myCourseQuizListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:padding="10dp"
+            ></ListView>
+
+</LinearLayout>

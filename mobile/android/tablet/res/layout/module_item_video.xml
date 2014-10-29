@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <LinearLayout
+                android:id="@+id/btn_back_normal"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/setting_back_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="false"
+                    android:src="@drawable/icon_button_back_normal"/>
+
+            <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/back"
+                    android:textColor="@color/txt_setting"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/next"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_nextone"/>
+
+        <ImageView
+                android:id="@+id/previous"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/next"
+                android:src="@drawable/icon_previousone"/>
+    </RelativeLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        <SurfaceView
+                android:id="@+id/mSurfaceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </SurfaceView>
+
+        <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+
+        <Button
+                android:id="@+id/play"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/movie_stop_bt"/>
+
+        <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:layout_gravity="bottom"
+                android:background="#00000000"
+                android:focusable="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="top">
+
+            <SeekBar
+                    android:id="@+id/seekbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_bar_seletor"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <WebView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:background="@color/white">
+
+    <ImageView
+            android:id="@+id/gridCourseBg"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:background="@drawable/course_default"
+            android:scaleType="centerCrop"/>
+
+    <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridCourseBg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:lines="2"
+            android:textColor="@color/txt_crouse_panel_crouse"
+            android:textIsSelectable="false"
+            android:textSize="22sp"/>
+
+    <TextView
+            android:id="@+id/colledgeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#616366"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/course_panel_school_name"
+            android:textStyle="italic|normal"/>
+
+    <TextView
+            android:id="@+id/applyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/colledgeName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#616366"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/course_panel_badge0"
+            android:textStyle="italic|normal"/>
+
+    <TextView
+            android:id="@+id/courseBreaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applyTime"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#616366"
+            android:textIsSelectable="false"
+            android:textSize="16sp"/>
+</RelativeLayout>
+

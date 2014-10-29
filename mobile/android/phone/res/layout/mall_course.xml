@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_all_course"
+        android:background="@color/course_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/ll_main_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.kaikeba.common.widget.MyScrollView
+                        android:id="@+id/myScrollView"
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+                        <LinearLayout
+                                android:id="@+id/ll_intro"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="10dp"
+                                android:background="@color/color_anonymity_title_bg">
+
+                            <TextView
+                                    android:id="@+id/tv_header_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="发现课程"
+                                    android:textColor="@color/text_color_anonymity_title"
+                                    android:textSize="18sp"/>
+
+                            <TextView
+                                    android:id="@+id/tv_header_intro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/find_course_humor"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/text_color_anonymity_title"
+                                    android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+                            <com.kaikeba.common.widget.CGridView
+                                    android:id="@+id/gv_categories"
+                                    android:listSelector="@android:color/transparent"
+                                    android:background="#f0f0f0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:horizontalSpacing="1dp"
+                                    android:verticalSpacing="1dp"
+                                    android:numColumns="3"
+                                    android:layout_weight="1"
+                                    />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                                android:id="@+id/micro_header_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="10dp"
+                                android:background="@color/color_anonymity_title_bg">
+
+                            <TextView
+                                    android:id="@+id/micro_header_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="专业/微专业"
+                                    android:textColor="@color/text_color_anonymity_title"
+                                    android:textSize="18sp"/>
+
+                            <TextView
+                                    android:id="@+id/micro_header_intro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/micro_intro_humor"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/text_color_anonymity_title"
+                                    android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <LinearLayout
+                                    android:id="@+id/course_container"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/course_bg_color"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </com.kaikeba.common.widget.MyScrollView>
+
+                <include layout="@layout/loading_fial_layout"/>
+                <include layout="@layout/loading_layout"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                layout="@layout/layout_login_or_register"></include>
+    </LinearLayout>
+
+</FrameLayout>

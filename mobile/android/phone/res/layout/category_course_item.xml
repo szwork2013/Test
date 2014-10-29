@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:orientation="vertical"
+                android:background="@drawable/settings_bg"
+                android:padding="14dp">
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="126dp"
+            android:layout_height="80dp">
+
+        <ImageView
+                android:id="@+id/iv_courseBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/default_224_140"
+                />
+
+        <RelativeLayout
+                android:id="@+id/rl_will_begin"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/translucence"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/will_begin"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:text="即将开课"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/relativeLayout1">
+
+        <TextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="课程名称"
+                android:textColor="#45494c"
+                android:textSize="20sp"
+                />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_course_name">
+
+            <ImageView
+                    android:id="@+id/img_course_type"
+                    android:layout_width="54dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/public_card"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <ImageView
+                            android:id="@+id/people_portrait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tv_num_learn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/public_people_portrait"/>
+
+                    <TextView
+                            android:id="@+id/tv_num_learn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#616466"
+                            android:singleLine="true"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="567人在学"
+                            android:textSize="12sp" android:layout_weight="2.20"/>
+                </RelativeLayout>
+
+                <com.kaikeba.common.widget.MyRatingBar
+                        xmlns:android_custom="http://schemas.android.com/apk/res/com.kaikeba.phone"
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android_custom:numStars="5"
+                        android_custom:starWidth="11dp"
+                        android_custom:starHeight="10dp"
+                        android_custom:rating="1.5"
+                        android_custom:starInterval="5dp"
+                        android_custom:progress="@drawable/star_bg"
+                        android_custom:progressDrawable="@drawable/full_star_blue"
+                        android_custom:secondaryProgress="@drawable/half_star_blue"
+                        />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

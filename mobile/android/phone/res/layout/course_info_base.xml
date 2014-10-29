@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/video_player"></include>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+        <TextView
+                android:id="@+id/tv_course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="￥123.45"
+                android:textColor="#ff6666"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/tv_course_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_course_price"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="￥123.45"
+                android:textColor="#999999"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textSize="14sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户端专享"
+                android:background="#ff6666"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_go_pay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buy_now_bg"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+    <include layout="@layout/course_info_base_detail"
+            />
+
+    <com.kaikeba.common.widget.AllCoursesGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:verticalSpacing="13dp"/>
+
+</LinearLayout>

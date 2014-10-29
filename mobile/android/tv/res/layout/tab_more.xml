@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="horizontal"
+              android:nextFocusUp="@+id/tv_tab_more"
+              android:nextFocusLeft="@null"
+              android:nextFocusRight="@null">
+
+    <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="@dimen/tab_more_list_view_width"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/more_nav_padding_left"
+            android:background="@drawable/list_bg_new"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/btn1"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:paddingLeft="@dimen/button_padding_left"
+                android:background="#00000000"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/tab_normal"
+                android:textSize="@dimen/button_text_size"
+                android:text="开课吧简介"
+                />
+
+        <Button
+                android:id="@+id/btn2"
+                android:layout_width="@dimen/button_width"
+                android:textStyle="bold"
+                android:layout_height="@dimen/button_height"
+                android:paddingLeft="@dimen/button_padding_left"
+                android:background="#00000000"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/tab_normal"
+                android:textSize="@dimen/button_text_size"
+                android:text="什么是导学课"
+                />
+
+        <Button
+                android:id="@+id/btn3"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/button_padding_left"
+                android:background="#00000000"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/tab_normal"
+                android:textSize="@dimen/button_text_size"
+                android:text="App二维码"
+                android:nextFocusRight="@+id/iphone"
+                />
+
+        <Button
+                android:id="@+id/btn4"
+                android:textStyle="bold"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:paddingLeft="@dimen/button_padding_left"
+                android:background="#00000000"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/tab_normal"
+                android:textSize="@dimen/button_text_size"
+                android:text="公众平台"
+                />
+
+        <Button
+                android:id="@+id/btn5"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:paddingLeft="@dimen/button_padding_left"
+                android:background="#00000000"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textColor="@color/tab_normal"
+                android:textSize="@dimen/button_text_size"
+                android:text="联系我们"
+                />
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ll5_line"/>-->
+
+    <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+    <ImageView
+            android:id="@+id/iv_course_info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_coursepage_unit_"/>
+
+    <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_course_info"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#666666"
+            android:textSize="@dimen/btn_query_course"/>
+
+    <ImageView
+            android:id="@+id/iv_coursse_state"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/tv_course_name"
+            android:src="@drawable/icon_finished"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/tv_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="30dp"/>
+
+    <ImageView
+            android:id="@+id/iv_course_detail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_02"
+            android:scaleType="centerInside"/>
+
+</RelativeLayout>

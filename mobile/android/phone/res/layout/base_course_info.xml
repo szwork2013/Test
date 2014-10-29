@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/course_bg_color"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:id="@+id/base_scroll"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+            <include layout="@layout/video_player"></include>
+
+            <RelativeLayout
+                    android:id="@+id/rel_guide_time"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="45dp">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/tv_coure_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16sp"
+                            android:textColor="#616466"
+                            android:text="6周"/>
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="16dp"
+                            android:background="#d4d6d8"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#616466"
+                            android:text="每周"/>
+                    <TextView
+                            android:id="@+id/tv_course_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#616466"
+                            android:text="2-3小时"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_difficulty_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/difficulty_false"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/difficulty_false"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/difficulty_false"/>
+                    <TextView
+                            android:id="@+id/tv_course_easy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10sp"
+                            android:textSize="17sp"
+                            android:textColor="#616466"
+                            android:src="@drawable/difficulty_false"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_guide_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="课程简介"
+                        android:textSize="18dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="14dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+
+                        <View
+                                android:layout_width="3dp"
+                                android:layout_height="19dp"
+                                android:background="#ffb726"
+                                android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/course_name"
+                                android:textSize="15dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="开课吧出品 响应式 舒鹏 编程开发 web设计"
+                                />
+
+                    </LinearLayout>
+
+                    <com.kaikeba.common.widget.CollapsibleTextView
+                            android:id="@+id/collapsible_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                    </com.kaikeba.common.widget.CollapsibleTextView>
+
+                </LinearLayout>
+
+                <TextView
+                        android:text="讲师简介"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                    <com.kaikeba.common.widget.MyListVIew
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:listSelector="@android:color/transparent"
+                            android:cacheColorHint="@color/white"
+                            android:id="@+id/teacher_listview"
+                            >
+
+                    </com.kaikeba.common.widget.MyListVIew>
+                </LinearLayout>
+
+
+                <TextView
+                        android:id="@+id/coc_txt"
+                        android:text="证书"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                <LinearLayout
+                        android:id="@+id/ll_coc_standard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coc_standard"
+                            android:textSize="14dp"
+                            android:textColor="#616446"
+                            />
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#d3d7dc"
+                            />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@color/white"
+                            android:paddingTop="10dp"
+                            android:gravity="center"
+                            >
+
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/certificate_img"
+                                android:src="@drawable/certificate_default"
+                                />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

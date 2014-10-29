@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_nav_unit"
+        >
+
+    <TextView
+            android:id="@+id/course_module"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/course_module"
+            android:gravity="center_vertical"
+            android:textColor="#14171a"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/img_lock"
+            />
+
+    <TextView
+            android:id="@+id/start_date"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textColor="#aaaeb2"
+            android:layout_toLeftOf="@+id/load_all_video"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+    <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_lock"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/start_date"
+            android:visibility="gone"
+            />
+
+    <Button
+            android:id="@+id/load_all_video"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:text="@string/load_all_video"
+            android:background="@drawable/button_downloadunit"
+            android:focusable="false"
+            />
+</RelativeLayout>

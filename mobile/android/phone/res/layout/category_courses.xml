@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/course_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_header"/>
+
+    <include layout="@layout/loading_layout"/>
+
+    <include layout="@layout/loading_fial_layout"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nodata"
+            android:text="数据库没有数据"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrAnimationStyle="rotate"
+            android:id="@+id/lv_category_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="#00000000"
+            android:listSelector="@android:color/transparent"
+            android:divider="@drawable/course_item_divider"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            />
+</LinearLayout>

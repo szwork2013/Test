@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e6e6e6"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#1a1a1a">
+
+        <ImageView
+                android:id="@+id/btn_back_normal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/unit_back_bg"
+                />
+
+        <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/course_unitbutton_menu"
+                android:scaleType="centerInside"/>
+
+        <TextView
+                android:id="@+id/tv_course_top_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/btn_back_normal"
+                android:layout_toLeftOf="@id/iv_menu"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="互联网营销概论互联网营销概论互联网营销"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_course_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+            android:id="@+id/ll_instrustor_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+            android:id="@+id/ll_course_arrange_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#e6e6e6"
+            >
+
+        <!-- <include layout="@layout/course_info_base"/> -->
+
+    </LinearLayout>
+
+</LinearLayout>

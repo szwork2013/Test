@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
+	<data>
+		<int key="IBDocument.SystemTarget">2048</int>
+		<string key="IBDocument.SystemVersion">13F34</string>
+		<string key="IBDocument.InterfaceBuilderVersion">6245</string>
+		<string key="IBDocument.AppKitVersion">1265.21</string>
+		<string key="IBDocument.HIToolboxVersion">698.00</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+			<string key="NS.object.0">6238</string>
+		</object>
+		<array key="IBDocument.IntegratedClassDependencies">
+			<string>IBProxyObject</string>
+			<string>IBUIActivityIndicatorView</string>
+			<string>IBUIButton</string>
+			<string>IBUIImageView</string>
+			<string>IBUILabel</string>
+			<string>IBUISlider</string>
+			<string>IBUISwipeGestureRecognizer</string>
+			<string>IBUITapGestureRecognizer</string>
+			<string>IBUIView</string>
+		</array>
+		<array key="IBDocument.PluginDependencies">
+			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+		</array>
+		<object class="NSMutableDictionary" key="IBDocument.Metadata">
+			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
+			<integer value="1" key="NS.object.0"/>
+		</object>
+		<array class="NSMutableArray" key="IBDocument.RootObjects" id="33682076">
+			<object class="IBProxyObject" id="48716014">
+				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
+				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+			</object>
+			<object class="IBProxyObject" id="539932756">
+				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
+				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+			</object>
+			<object class="IBUITapGestureRecognizer" id="1036610443"/>
+			<object class="IBUIView" id="217490078">
+				<reference key="NSNextResponder"/>
+				<int key="NSvFlags">274</int>
+				<array class="NSMutableArray" key="NSSubviews">
+					<object class="IBUIView" id="156069877">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrameSize">{320, 180}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="587688672"/>
+						<object class="NSColor" key="IBUIBackgroundColor" id="179957961">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MCAwAA</bytes>
+						</object>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<array key="IBUIGestureRecognizers" id="0"/>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIView" id="817787501">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">282</int>
+						<string key="NSFrame">{{20, 120}, {280, 40}}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="IBUIBackgroundColor" ref="179957961"/>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUITag">1112</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<integer value="256" key="IBUIAccessibilityTraits"/>
+							<boolean value="YES" key="IBUIIsAccessibilityElement"/>
+						</object>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUILabel" id="587688672">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">-2147483374</int>
+						<string key="NSFrameSize">{320, 180}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="830128863"/>
+						<object class="NSColor" key="IBUIBackgroundColor" id="880615521">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MAA</bytes>
+						</object>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<string key="IBUIText"/>
+						<object class="NSColor" key="IBUITextColor" id="70815456">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MQA</bytes>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">0</int>
+						<int key="IBUINumberOfLines">0</int>
+						<int key="IBUITextAlignment">1</int>
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
+							<int key="type">2</int>
+							<double key="pointSize">18</double>
+						</object>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">HelveticaNeue-Bold</string>
+							<double key="NSSize">18</double>
+							<int key="NSfFlags">16</int>
+						</object>
+						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<double key="preferredMaxLayoutWidth">320</double>
+					</object>
+					<object class="IBUIView" id="945146605">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">311</int>
+						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIView" id="277161857">
+								<reference key="NSNextResponder" ref="945146605"/>
+								<int key="NSvFlags">306</int>
+								<string key="NSFrame">{{0, 10}, {293, 43}}</string>
+								<reference key="NSSuperview" ref="945146605"/>
+								<reference key="NSNextKeyView" ref="104598778"/>
+								<reference key="IBUIBackgroundColor" ref="179957961"/>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUITag">1111</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+						</array>
+						<string key="NSFrame">{{13, 0}, {293, 110}}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="277161857"/>
+						<reference key="IBUIBackgroundColor" ref="179957961"/>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIView" id="830128863">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">-2147483374</int>
+						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIImageView" id="783003104">
+								<reference key="NSNextResponder" ref="830128863"/>
+								<int key="NSvFlags">274</int>
+								<string key="NSFrameSize">{320, 180}</string>
+								<reference key="NSSuperview" ref="830128863"/>
+								<reference key="NSNextKeyView" ref="796488103"/>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUILabel" id="796488103">
+								<reference key="NSNextResponder" ref="830128863"/>
+								<int key="NSvFlags">271</int>
+								<string key="NSFrame">{{20, 105}, {280, 21}}</string>
+								<reference key="NSSuperview" ref="830128863"/>
+								<reference key="NSNextKeyView" ref="546600418"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">Label</string>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<object class="NSColorSpace" key="NSCustomColorSpace" id="923741582">
+										<int key="NSID">1</int>
+									</object>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<object class="NSColor" key="IBUIShadowColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MCAwIDAAA</bytes>
+									<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+								</object>
+								<string key="IBUIShadowOffset">{1, 1}</string>
+								<int key="IBUIBaselineAdjustment">0</int>
+								<int key="IBUITextAlignment">1</int>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">2</int>
+									<double key="pointSize">17</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">HelveticaNeue-Bold</string>
+									<double key="NSSize">17</double>
+									<int key="NSfFlags">16</int>
+								</object>
+								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+								<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
+							</object>
+						</array>
+						<string key="NSFrameSize">{320, 180}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="783003104"/>
+						<reference key="IBUIBackgroundColor" ref="179957961"/>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIView" id="546600418">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">274</int>
+						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIView" id="354316996">
+								<reference key="NSNextResponder" ref="546600418"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrameSize">{320, 90}</string>
+								<reference key="NSSuperview" ref="546600418"/>
+								<reference key="NSNextKeyView" ref="759191692"/>
+								<reference key="IBUIBackgroundColor" ref="179957961"/>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUIView" id="759191692">
+								<reference key="NSNextResponder" ref="546600418"/>
+								<int key="NSvFlags">-2147483358</int>
+								<array class="NSMutableArray" key="NSSubviews">
+									<object class="IBUIButton" id="304672336">
+										<reference key="NSNextResponder" ref="759191692"/>
+										<int key="NSvFlags">292</int>
+										<string key="NSFrame">{{6, 6}, {40, 40}}</string>
+										<reference key="NSSuperview" ref="759191692"/>
+										<reference key="NSNextKeyView" ref="526299525"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<object class="NSColor" key="IBUINormalTitleShadowColor" id="883061300">
+											<int key="NSColorSpace">3</int>
+											<bytes key="NSWhite">MC41AA</bytes>
+										</object>
+										<object class="NSCustomResource" key="IBUINormalImage" id="94602210">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_cross.png</string>
+										</object>
+										<object class="IBUIFontDescription" key="IBUIFontDescription" id="34785396">
+											<int key="type">1</int>
+											<double key="pointSize">18</double>
+										</object>
+										<object class="NSFont" key="IBUIFont" id="470622008">
+											<string key="NSName">HelveticaNeue</string>
+											<double key="NSSize">18</double>
+											<int key="NSfFlags">16</int>
+										</object>
+									</object>
+								</array>
+								<string key="NSFrameSize">{320, 46}</string>
+								<reference key="NSSuperview" ref="546600418"/>
+								<reference key="NSNextKeyView" ref="304672336"/>
+								<reference key="IBUIBackgroundColor" ref="179957961"/>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUIView" id="526299525">
+								<reference key="NSNextResponder" ref="546600418"/>
+								<int key="NSvFlags">290</int>
+								<array class="NSMutableArray" key="NSSubviews">
+									<object class="IBUILabel" id="78656544">
+										<reference key="NSNextResponder" ref="526299525"/>
+										<int key="NSvFlags">292</int>
+										<string key="NSFrame">{{76, 0}, {95, 44}}</string>
+										<reference key="NSSuperview" ref="526299525"/>
+										<reference key="NSNextKeyView" ref="880541566"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<bool key="IBUIClipsSubviews">YES</bool>
+										<int key="IBUIContentMode">7</int>
+										<bool key="IBUIUserInteractionEnabled">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<string key="IBUIText">Label</string>
+										<object class="NSColor" key="IBUITextColor">
+											<int key="NSColorSpace">1</int>
+											<bytes key="NSRGB">MSAxIDEAA</bytes>
+											<reference key="NSCustomColorSpace" ref="923741582"/>
+										</object>
+										<nil key="IBUIHighlightedColor"/>
+										<int key="IBUIBaselineAdjustment">0</int>
+										<object class="IBUIFontDescription" key="IBUIFontDescription">
+											<int key="type">1</int>
+											<double key="pointSize">17</double>
+										</object>
+										<object class="NSFont" key="IBUIFont">
+											<string key="NSName">HelveticaNeue</string>
+											<double key="NSSize">17</double>
+											<int key="NSfFlags">16</int>
+										</object>
+										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
+									</object>
+									<object class="IBUIButton" id="880541566">
+										<reference key="NSNextResponder" ref="526299525"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{251, 0}, {32, 44}}</string>
+										<reference key="NSSuperview" ref="526299525"/>
+										<reference key="NSNextKeyView" ref="334622305"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<bool key="IBUIEnabled">NO</bool>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleColor" ref="70815456"/>
+										<reference key="IBUIHighlightedTitleColor" ref="70815456"/>
+										<object class="NSColor" key="IBUIDisabledTitleColor" id="718844995">
+											<int key="NSColorSpace">3</int>
+											<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
+										</object>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="NSCustomResource" key="IBUINormalImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_rewind.png</string>
+										</object>
+										<object class="IBUIFontDescription" key="IBUIFontDescription" id="547806454">
+											<int key="type">2</int>
+											<double key="pointSize">15</double>
+										</object>
+										<object class="NSFont" key="IBUIFont" id="60376913">
+											<string key="NSName">HelveticaNeue-Bold</string>
+											<double key="NSSize">15</double>
+											<int key="NSfFlags">16</int>
+										</object>
+									</object>
+									<object class="IBUIButton" id="334622305">
+										<reference key="NSNextResponder" ref="526299525"/>
+										<int key="NSvFlags">289</int>
+										<string key="NSFrame">{{288, 0}, {32, 44}}</string>
+										<reference key="NSSuperview" ref="526299525"/>
+										<reference key="NSNextKeyView" ref="71793364"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<bool key="IBUIEnabled">NO</bool>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleColor" ref="70815456"/>
+										<reference key="IBUIHighlightedTitleColor" ref="70815456"/>
+										<reference key="IBUIDisabledTitleColor" ref="718844995"/>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="NSCustomResource" key="IBUINormalImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_next.png</string>
+										</object>
+										<reference key="IBUIFontDescription" ref="547806454"/>
+										<reference key="IBUIFont" ref="60376913"/>
+									</object>
+									<object class="IBUIButton" id="827994014">
+										<reference key="NSNextResponder" ref="526299525"/>
+										<int key="NSvFlags">292</int>
+										<string key="NSFrameSize">{30, 44}</string>
+										<reference key="NSSuperview" ref="526299525"/>
+										<reference key="NSNextKeyView" ref="78656544"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<reference key="IBUINormalImage" ref="94602210"/>
+										<object class="IBUIFontDescription" key="IBUIFontDescription" id="831367362">
+											<int key="type">1</int>
+											<double key="pointSize">15</double>
+										</object>
+										<object class="NSFont" key="IBUIFont" id="747877728">
+											<string key="NSName">HelveticaNeue</string>
+											<double key="NSSize">15</double>
+											<int key="NSfFlags">16</int>
+										</object>
+									</object>
+								</array>
+								<string key="NSFrameSize">{320, 44}</string>
+								<reference key="NSSuperview" ref="546600418"/>
+								<reference key="NSNextKeyView" ref="827994014"/>
+								<reference key="IBUIBackgroundColor" ref="179957961"/>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUIView" id="409850848">
+								<reference key="NSNextResponder" ref="546600418"/>
+								<int key="NSvFlags">266</int>
+								<array class="NSMutableArray" key="NSSubviews">
+									<object class="IBUIButton" id="881460401">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">268</int>
+										<string key="NSFrame">{{2, 0}, {32, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="191964259"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<object class="NSColor" key="IBUINormalTitleColor">
+											<int key="NSColorSpace">1</int>
+											<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+										</object>
+										<reference key="IBUIHighlightedTitleColor" ref="70815456"/>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="NSCustomResource" key="IBUISelectedImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_play.png</string>
+										</object>
+										<object class="NSCustomResource" key="IBUINormalImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_pause.png</string>
+										</object>
+										<reference key="IBUIFontDescription" ref="547806454"/>
+										<reference key="IBUIFont" ref="60376913"/>
+									</object>
+									<object class="IBUISlider" id="409453337">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">298</int>
+										<string key="NSFrame">{{76, 11}, {82, 23}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="578310161"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<bool key="IBUIEnabled">NO</bool>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<float key="IBUIValue">0.5</float>
+									</object>
+									<object class="IBUILabel" id="578310161">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{164, 0}, {40, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="487294649"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<bool key="IBUIClipsSubviews">YES</bool>
+										<int key="IBUIContentMode">7</int>
+										<bool key="IBUIUserInteractionEnabled">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<string key="IBUIText">00:00</string>
+										<object class="NSColor" key="IBUITextColor">
+											<int key="NSColorSpace">1</int>
+											<bytes key="NSRGB">MSAxIDEAA</bytes>
+											<reference key="NSCustomColorSpace" ref="923741582"/>
+										</object>
+										<nil key="IBUIHighlightedColor"/>
+										<int key="IBUIBaselineAdjustment">0</int>
+										<object class="IBUIFontDescription" key="IBUIFontDescription" id="596907660">
+											<string key="name">Helvetica</string>
+											<string key="family">Helvetica</string>
+											<int key="traits">0</int>
+											<double key="pointSize">10</double>
+										</object>
+										<object class="NSFont" key="IBUIFont" id="1239498">
+											<string key="NSName">Helvetica</string>
+											<double key="NSSize">10</double>
+											<int key="NSfFlags">16</int>
+										</object>
+										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
+									</object>
+									<object class="IBUILabel" id="191964259">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">268</int>
+										<string key="NSFrame">{{30, 0}, {40, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="409453337"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<bool key="IBUIClipsSubviews">YES</bool>
+										<int key="IBUIContentMode">7</int>
+										<bool key="IBUIUserInteractionEnabled">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<string key="IBUIText">00:00</string>
+										<object class="NSColor" key="IBUITextColor">
+											<int key="NSColorSpace">1</int>
+											<bytes key="NSRGB">MSAxIDEAA</bytes>
+											<reference key="NSCustomColorSpace" ref="923741582"/>
+										</object>
+										<nil key="IBUIHighlightedColor"/>
+										<int key="IBUIBaselineAdjustment">0</int>
+										<int key="IBUITextAlignment">2</int>
+										<reference key="IBUIFontDescription" ref="596907660"/>
+										<reference key="IBUIFont" ref="1239498"/>
+										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
+									</object>
+									<object class="IBUIButton" id="487294649">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{206, 0}, {32, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="876474945"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<bool key="IBUIEnabled">NO</bool>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleColor" ref="70815456"/>
+										<reference key="IBUIHighlightedTitleColor" ref="70815456"/>
+										<string key="IBUINormalTitle">en</string>
+										<reference key="IBUIDisabledTitleColor" ref="718844995"/>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<reference key="IBUIFontDescription" ref="547806454"/>
+										<reference key="IBUIFont" ref="60376913"/>
+									</object>
+									<object class="IBUIButton" id="876474945">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{242, 0}, {40, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="776862623"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<bool key="IBUIEnabled">NO</bool>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleColor" ref="70815456"/>
+										<reference key="IBUIHighlightedTitleColor" ref="70815456"/>
+										<string key="IBUIDisabledTitle">AUTO</string>
+										<string key="IBUINormalTitle">AUTO</string>
+										<reference key="IBUIDisabledTitleColor" ref="718844995"/>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="IBUIFontDescription" key="IBUIFontDescription">
+											<int key="type">2</int>
+											<double key="pointSize">11</double>
+										</object>
+										<object class="NSFont" key="IBUIFont">
+											<string key="NSName">HelveticaNeue-Bold</string>
+											<double key="NSSize">11</double>
+											<int key="NSfFlags">16</int>
+										</object>
+									</object>
+									<object class="IBUIButton" id="776862623">
+										<reference key="NSNextResponder" ref="409850848"/>
+										<int key="NSvFlags">265</int>
+										<string key="NSFrame">{{284, 0}, {32, 44}}</string>
+										<reference key="NSSuperview" ref="409850848"/>
+										<reference key="NSNextKeyView" ref="232154149"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="NSCustomResource" key="IBUISelectedImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_zoom_out.png</string>
+										</object>
+										<object class="NSCustomResource" key="IBUINormalImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_zoom_in.png</string>
+										</object>
+										<reference key="IBUIFontDescription" ref="831367362"/>
+										<reference key="IBUIFont" ref="747877728"/>
+									</object>
+								</array>
+								<string key="NSFrame">{{0, 136}, {320, 44}}</string>
+								<reference key="NSSuperview" ref="546600418"/>
+								<reference key="NSNextKeyView" ref="881460401"/>
+								<reference key="IBUIBackgroundColor" ref="179957961"/>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+							<object class="IBUIView" id="71793364">
+								<reference key="NSNextResponder" ref="546600418"/>
+								<int key="NSvFlags">274</int>
+								<array class="NSMutableArray" key="NSSubviews">
+									<object class="IBUIButton" id="337262315">
+										<reference key="NSNextResponder" ref="71793364"/>
+										<int key="NSvFlags">-2147483347</int>
+										<string key="NSFrame">{{110, 18}, {100, 100}}</string>
+										<reference key="NSSuperview" ref="71793364"/>
+										<reference key="NSNextKeyView" ref="409850848"/>
+										<bool key="IBUIOpaque">NO</bool>
+										<float key="IBUIAlpha">0.80000001192092896</float>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIContentHorizontalAlignment">0</int>
+										<int key="IBUIContentVerticalAlignment">0</int>
+										<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+										<object class="NSCustomResource" key="IBUISelectedImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">VKVideoPlayer_play_big.png</string>
+										</object>
+										<object class="NSImage" key="IBUINormalImage">
+											<int key="NSImageFlags">12582912</int>
+											<array class="NSMutableArray" key="NSReps">
+												<array>
+													<integer value="0"/>
+													<object class="NSBitmapImageRep">
+														<object class="NSData" key="NSTIFFRepresentation">
+															<bytes key="NS.bytes">TU0AKgAAVZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAABwAAABoAAAAaAAAAGgAAABoAAAAaAAAAGgAAABoAAAAHAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAC0EBARA
+AwMDUwMDA2YhIyFtaWtpg2lraYNpa2mDaWtpg2lraYNpa2mDaWtpgyEjIW0DAwNmAwMDUwQEBEAAAAAt
+AAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVBAQEQAMDA1lVVVV7n5+fmMbHxq7k5eTE
+/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dnk5eTExsfGrp+fn5hVVVV7
+AwMDXwQEBEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAwAwMDWVVVVXvGx8au7e3ty/3+/dn9/v3Z/f792f3+/dn9/v3Z
+/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn19/XS
+xsfGrn6AfooDAwNZAAAAMwAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAkAAAA2ISMhbZ+fn5jt7e3L/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z2travLm6uaeurq6g
+aWtpg2lraYNpa2mDaWtpg2lraYNpa2mDaWtpg66urqC5urmn2travPX39dL9/v3Z/f792f3+/dn9/v3Z
+/f792e3t7cuurq6gISMhbQAAADYAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2
+ISMhba6urqD19/XS/f792f3+/dn9/v3Z/f792eTl5MSfn5+YVVVVewMDA2YDAwNNAAAAOQAAADMAAAAa
+AAAAGgAAABoAAAAaAAAAGgAAABoAAAAaAAAAMwAAADkDAwNNAwMDX1VVVXufn5+Y5OXkxP3+/dn9/v3Z
+/f792f3+/dn19/XSrq6uoCEjIW0AAAA2AAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAwMDTY+Pj5L19/XS
+/f792f3+/dn9/v3Z7e3ty66urqA9PT11AwMDUwAAAC0AAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAC0DAwNTPT09da6urqDt7e3L
+/f792f3+/dn9/v3Z9ff10p+fn5gDAwNTAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANj09PXXa2tq8/f792f3+/dn9/v3Z
+7e3ty4+Pj5IDAwNZAAAAMwAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANAAAAMwMDA1mPj4+S
+7e3ty/3+/dn9/v3Z/f792eTl5MRVVVV7AAAAPAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQQEBECPj4+S9ff10v3+/dn9/v3Z9ff10p+fn5gDAwNZ
+AAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADAwNZ
+j4+PkvX39dL9/v3Z/f792f3+/dmfn5+YBAQEQAAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACkDAwNTxsfGrv3+/dn9/v3Z/f792dHS0bUhIyFtAAAANgAAAAMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2
+ISMhbdHS0bX9/v3Z/f792f3+/dnGx8auISMhbQAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAApISMhbeTl5MT9/v3Z/f792fX39dKPj4+SBAQERgAAABwAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAc
+BAQERn6Afor19/XS/f792f3+/dnk5eTEISMhbQAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAKSEjIW3k5eTE/f792f3+/dnk5eTEVVVVewAAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAANj09PXXk5eTE/f792f3+/dnk5eTEISMhbQAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkhIyFt
+5OXkxP3+/dn9/v3Z5OXkxCEjIW0AAAApAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAKSEjIW3a2tq8/f792f3+/dnk5eTEISMhbQAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVISMhbeTl5MT9/v3Z
+/f792eTl5MQhIyFtAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIgMDA03Gx8au/f792f3+/dnk5eTEISMhbQAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwQEBEDGx8au/f792f3+/dnk5eTE
+ISMhbQAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAFQQEBEbR0tG1/f792f3+/dnR0tG1BAQERgAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8n5+fmP3+/dn9/v3Z5OXkxCEjIW0AAAAp
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAHCEjIW3k5eTE/f792f3+/dmurq6gAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKVVVVXv9/v3Z/f792fX39dJVVVV7AAAAKQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAKSEjIW319/XS/f792f3+/dlpa2mDAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAkDAwNT5OXkxP3+/dn9/v3ZfoB+igAAADYAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAANmlraYP9/v3Z/f792e3t7cshIyFtAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAANq6urqD9/v3Z/f792bm6uacAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAPLm6uaf9/v3Z/f792a6urqAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAABU9PT119ff10v3+/dn19/XSISMhbQAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP
+ISMhbe3t7cv9/v3Z/f792T09PXUAAAAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+BAQEQMbHxq79/v3Z/f792Y+Pj5IAAAA2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+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
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAANq6urqD9/v3Z/f792Z+fn5gAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwNZ
+7e3ty/3+/dn19/XSISMhbQAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkhIyFt
+9ff10v3+/dn19/XSISMhbQAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADCPj4+S
+/f792f3+/dnGx8auBAQEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPK6urqD9/v3Z
+/f792a6urqAAAAA2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDA1Pk5eTE
+/f792f3+/dlpa2mDAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+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
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH
+AAAAMAMDA1lVVVV7n5+fmNra2rz9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z
+/f792f3+/dn9/v3Z/f792f3+/dn9/v3Z/f792dra2ryurq6gVVVVewMDA1kAAAAwAAAABwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAABQAAAAtAwMDTQMDA2Zpa2mDn5+fmK6urqDa2tq82travNra2rz9/v3Z/f792f3+/dna2tq8
+2travNra2ryurq6gn5+fmGlraYMDAwNmAwMDTQAAADMAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABoAAAAtAAAAMwMDA00DAwNNAwMDTQMDA2YDAwNmAwMDZgMDA00DAwNN
+AwMDTQAAADMAAAAtAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAA4BAAADAAAAAQBKAAABAQADAAAAAQBKAAABAgADAAAABAAAVkYBAwADAAAAAQAB
+AAABBgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQBK
+AAABFwAEAAAAAQAAVZABHAADAAAAAQABAAABUgADAAAAAQACAAABUwADAAAABAAAVk6HcwAHAAAMSAAA
+VlYAAAAAAAgACAAIAAgAAQABAAEAAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFj
+c3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0
+cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRt
+bmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1l
+YXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRl
+eHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhld2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAA
+ABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZ
+WiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZ
+WiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAA
+AAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNl
+IC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0g
+c1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25k
+aXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9u
+IGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQ
+zxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAATAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAA
+AAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAy
+ADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDG
+AMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8
+AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6
+AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPH
+A9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVn
+BXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdh
+B3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6
+Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1
+DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+W
+D7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMj
+E0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcd
+F0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuK
+G7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBs
+IJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXH
+JfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSud
+K9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHy
+MioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjI
+OQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAj
+QGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgF
+SEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1Bx
+ULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllp
+WbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLw
+Y0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20I
+bWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3Vnez
+eBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0
+g1eDuoQdhICE44VHhauGDoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7O
+jzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtC
+m6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhS
+qMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYB
+tnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRR
+xM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE
+08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb
+42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ
+86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//w</bytes>
+														</object>
+													</object>
+												</array>
+											</array>
+											<reference key="NSColor" ref="179957961"/>
+										</object>
+										<reference key="IBUIFontDescription" ref="34785396"/>
+										<reference key="IBUIFont" ref="470622008"/>
+									</object>
+								</array>
+								<string key="NSFrameSize">{320, 136}</string>
+								<reference key="NSSuperview" ref="546600418"/>
+								<reference key="NSNextKeyView" ref="337262315"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<object class="NSColor" key="IBUIBackgroundColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MCAwIDAgMC4zAA</bytes>
+								</object>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
+						</array>
+						<string key="NSFrameSize">{320, 180}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="354316996"/>
+						<reference key="IBUIBackgroundColor" ref="179957961"/>
+						<reference key="IBUIGestureRecognizers" ref="0"/>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIActivityIndicatorView" id="104598778">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">-2147483347</int>
+						<string key="NSFrame">{{141, 72}, {37, 37}}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="817787501"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<reference key="IBUIGestureRecognizers" ref="0"/>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIStyle">0</int>
+					</object>
+					<object class="IBUIView" id="232154149">
+						<reference key="NSNextResponder" ref="217490078"/>
+						<int key="NSvFlags">274</int>
+						<array class="NSMutableArray" key="NSSubviews">
+							<object class="IBUIImageView" id="74221047">
+								<reference key="NSNextResponder" ref="232154149"/>
+								<int key="NSvFlags">274</int>
+								<string key="NSFrameSize">{320, 180}</string>
+								<reference key="NSSuperview" ref="232154149"/>
+								<reference key="NSNextKeyView" ref="93183498"/>
+								<string key="NSHuggingPriority">{251, 251}</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">bg_video.png</string>
+								</object>
+							</object>
+							<object class="IBUIButton" id="93183498">
+								<reference key="NSNextResponder" ref="232154149"/>
+								<int key="NSvFlags">293</int>
+								<string key="NSFrame">{{125, 35}, {68, 68}}</string>
+								<reference key="NSSuperview" ref="232154149"/>
+								<reference key="NSNextKeyView" ref="692155064"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUINormalTitleShadowColor" ref="883061300"/>
+								<object class="NSCustomResource" key="IBUINormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">video_play.png</string>
+								</object>
+								<reference key="IBUIFontDescription" ref="34785396"/>
+								<reference key="IBUIFont" ref="470622008"/>
+							</object>
+							<object class="IBUILabel" id="692155064">
+								<reference key="NSNextResponder" ref="232154149"/>
+								<int key="NSvFlags">293</int>
+								<string key="NSFrame">{{63, 133}, {195, 18}}</string>
+								<reference key="NSSuperview" ref="232154149"/>
+								<reference key="NSNextKeyView" ref="945146605"/>
+								<string key="NSHuggingPriority">{251, 251}</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">数据加载错误，点击重新播放</string>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC40MDAwMDAwMzU4IDAuNDAwMDAwMDM1OCAwLjQwMDAwMDAzNTgAA</bytes>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">0</int>
+								<reference key="IBUIFontDescription" ref="831367362"/>
+								<reference key="IBUIFont" ref="747877728"/>
+								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+								<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
+							</object>
+						</array>
+						<string key="NSFrameSize">{320, 180}</string>
+						<reference key="NSSuperview" ref="217490078"/>
+						<reference key="NSNextKeyView" ref="74221047"/>
+						<reference key="IBUIBackgroundColor" ref="179957961"/>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+				</array>
+				<string key="NSFrameSize">{320, 180}</string>
+				<reference key="NSSuperview"/>
+				<reference key="NSNextKeyView" ref="156069877"/>
+				<reference key="IBUIBackgroundColor" ref="880615521"/>
+				<bool key="IBUIClipsSubviews">YES</bool>
+				<reference key="IBUIGestureRecognizers" ref="0"/>
+				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
+					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
+					<string key="IBUIDisplayName">Freeform</string>
+				</object>
+				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+			</object>
+			<object class="IBUISwipeGestureRecognizer" id="730615278">
+				<int key="IBUIDirection">2</int>
+			</object>
+			<object class="IBUISwipeGestureRecognizer" id="383337319"/>
+		</array>
+		<object class="IBObjectContainer" key="IBDocument.Objects">
+			<bool key="usesAutoincrementingIDs">NO</bool>
+			<array key="connectionRecords">
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">activityIndicator</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="104598778"/>
+					</object>
+					<string key="id">55</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bottomControlOverlay</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="409850848"/>
+					</object>
+					<string key="id">87</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">buttonPlaceHolderView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="354316996"/>
+					</object>
+					<string key="id">5qL-9Y-6gV</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">captionBottomView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="817787501"/>
+					</object>
+					<string key="id">66</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">captionButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="487294649"/>
+					</object>
+					<string key="id">46</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">captionTopContainerView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="945146605"/>
+					</object>
+					<string key="id">65</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">captionTopView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="277161857"/>
+					</object>
+					<string key="id">67</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">controls</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="546600418"/>
+					</object>
+					<string key="id">34</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">currentTimeLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="191964259"/>
+					</object>
+					<string key="id">85</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">doneButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="827994014"/>
+					</object>
+					<string key="id">gkB-cY-P4X</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">externalDeviceImageView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="783003104"/>
+					</object>
+					<string key="id">106</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">externalDeviceLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="796488103"/>
+					</object>
+					<string key="id">107</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">externalDeviceView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="830128863"/>
+					</object>
+					<string key="id">108</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">fullscreenButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="776862623"/>
+					</object>
+					<string key="id">F4o-y1-pUP</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">messageLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="587688672"/>
+					</object>
+					<string key="id">64</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">nextButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="334622305"/>
+					</object>
+					<string key="id">38</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">playButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="881460401"/>
+					</object>
+					<string key="id">25</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">playerLayerView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="156069877"/>
+					</object>
+					<string key="id">58</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">rewindButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="880541566"/>
+					</object>
+					<string key="id">41</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">scrubber</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="409453337"/>
+					</object>
+					<string key="id">26</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">titleLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="78656544"/>
+					</object>
+					<string key="id">90</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">topControlOverlay</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="526299525"/>
+					</object>
+					<string key="id">33</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">topPortraitCloseButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="304672336"/>
+					</object>
+					<string key="id">eY8-PJ-tB8</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">topPortraitControlOverlay</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="759191692"/>
+					</object>
+					<string key="id">fYr-au-b2L</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">totalTimeLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="578310161"/>
+					</object>
+					<string key="id">82</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">videoQualityButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="876474945"/>
+					</object>
+					<string key="id">44</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">view</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="217490078"/>
+					</object>
+					<string key="id">22</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bigPlayButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="337262315"/>
+					</object>
+					<string key="id">eHt-hQ-d1R</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bigPlayBGView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="71793364"/>
+					</object>
+					<string key="id">Cx4-0Z-X8l</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">failedView</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="232154149"/>
+					</object>
+					<string key="id">c5V-PP-fB9</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">reloadButton</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="93183498"/>
+					</object>
+					<string key="id">2r4-eN-d3P</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">fauledMessageLabel</string>
+						<reference key="source" ref="48716014"/>
+						<reference key="destination" ref="692155064"/>
+					</object>
+					<string key="id">I9Y-bw-QND</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">gestureRecognizers</string>
+						<reference key="source" ref="217490078"/>
+						<reference key="destination" ref="1036610443"/>
+						<bool key="addsContentToExistingCollection">YES</bool>
+					</object>
+					<string key="id">78</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">gestureRecognizers</string>
+						<reference key="source" ref="217490078"/>
+						<reference key="destination" ref="730615278"/>
+						<bool key="addsContentToExistingCollection">YES</bool>
+					</object>
+					<string key="id">qgs-d1-IVP</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">gestureRecognizers</string>
+						<reference key="source" ref="217490078"/>
+						<reference key="destination" ref="383337319"/>
+						<bool key="addsContentToExistingCollection">YES</bool>
+					</object>
+					<string key="id">zRV-VY-YKk</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">playButtonTapped:</string>
+						<reference key="source" ref="881460401"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">30</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">nextTrackButtonPressed:</string>
+						<reference key="source" ref="334622305"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">68</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">rewindButtonPressed:</string>
+						<reference key="source" ref="880541566"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">70</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">videoQualityButtonTapped:</string>
+						<reference key="source" ref="876474945"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">101</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">captionButtonTapped:</string>
+						<reference key="source" ref="487294649"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">96</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">handleSingleTap:</string>
+						<reference key="source" ref="1036610443"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">51</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1036610443"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">81</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">playButtonTapped:</string>
+						<reference key="source" ref="337262315"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">wHK-Ly-fNf</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">fullscreenButtonTapped:</string>
+						<reference key="source" ref="776862623"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">KFu-3d-XYi</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">handleSwipeRight:</string>
+						<reference key="source" ref="383337319"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">3AV-Uc-Rje</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="383337319"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">rBE-hv-VYG</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">doneButtonTapped:</string>
+						<reference key="source" ref="827994014"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">llE-GB-LQt</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">reloadBtnTapped:</string>
+						<reference key="source" ref="93183498"/>
+						<reference key="destination" ref="48716014"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<string key="id">Ldb-Km-Flp</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">handleSwipeLeft:</string>
+						<reference key="source" ref="730615278"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">2B6-3u-Ol8</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="730615278"/>
+						<reference key="destination" ref="48716014"/>
+					</object>
+					<string key="id">Apg-XP-lru</string>
+				</object>
+			</array>
+			<object class="IBMutableOrderedSet" key="objectRecords">
+				<array key="orderedObjects">
+					<object class="IBObjectRecord">
+						<string key="id">0</string>
+						<reference key="object" ref="0"/>
+						<reference key="children" ref="33682076"/>
+						<nil key="parent"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">-1</string>
+						<reference key="object" ref="48716014"/>
+						<reference key="parent" ref="0"/>
+						<string key="objectName">File's Owner</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">-2</string>
+						<reference key="object" ref="539932756"/>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">49</string>
+						<reference key="object" ref="1036610443"/>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">1</string>
+						<reference key="object" ref="217490078"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="156069877"/>
+							<reference ref="817787501"/>
+							<reference ref="587688672"/>
+							<reference ref="945146605"/>
+							<reference ref="830128863"/>
+							<reference ref="546600418"/>
+							<reference ref="104598778"/>
+							<reference ref="232154149"/>
+						</array>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">56</string>
+						<reference key="object" ref="156069877"/>
+						<reference key="parent" ref="217490078"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">59</string>
+						<reference key="object" ref="817787501"/>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">Bottom Captions Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">61</string>
+						<reference key="object" ref="587688672"/>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">Message Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">62</string>
+						<reference key="object" ref="945146605"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="277161857"/>
+						</array>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">Top Captions</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">63</string>
+						<reference key="object" ref="277161857"/>
+						<reference key="parent" ref="945146605"/>
+						<string key="objectName">Top Captions Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">104</string>
+						<reference key="object" ref="830128863"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="783003104"/>
+							<reference ref="796488103"/>
+						</array>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">External Device View</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">103</string>
+						<reference key="object" ref="783003104"/>
+						<reference key="parent" ref="830128863"/>
+						<string key="objectName">External Device Image</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">105</string>
+						<reference key="object" ref="796488103"/>
+						<reference key="parent" ref="830128863"/>
+						<string key="objectName">External Device Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">31</string>
+						<reference key="object" ref="546600418"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="354316996"/>
+							<reference ref="759191692"/>
+							<reference ref="526299525"/>
+							<reference ref="409850848"/>
+							<reference ref="71793364"/>
+						</array>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">Controls</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">92</string>
+						<reference key="object" ref="354316996"/>
+						<reference key="parent" ref="546600418"/>
+						<string key="objectName">Button Panel</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">xtv-gf-Qvy</string>
+						<reference key="object" ref="759191692"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="304672336"/>
+						</array>
+						<reference key="parent" ref="546600418"/>
+						<string key="objectName">Top Controls Portrait</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">lRL-G6-RP6</string>
+						<reference key="object" ref="304672336"/>
+						<reference key="parent" ref="759191692"/>
+						<string key="objectName">Close Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">32</string>
+						<reference key="object" ref="526299525"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="78656544"/>
+							<reference ref="880541566"/>
+							<reference ref="334622305"/>
+							<reference ref="827994014"/>
+						</array>
+						<reference key="parent" ref="546600418"/>
+						<string key="objectName">Top Controls Landscape</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">89</string>
+						<reference key="object" ref="78656544"/>
+						<reference key="parent" ref="526299525"/>
+						<string key="objectName">Title Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">40</string>
+						<reference key="object" ref="880541566"/>
+						<reference key="parent" ref="526299525"/>
+						<string key="objectName">Rewind Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">37</string>
+						<reference key="object" ref="334622305"/>
+						<reference key="parent" ref="526299525"/>
+						<string key="objectName">Next Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">LWl-fl-KpR</string>
+						<reference key="object" ref="827994014"/>
+						<reference key="parent" ref="526299525"/>
+						<string key="objectName">Close Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">3</string>
+						<reference key="object" ref="409850848"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="881460401"/>
+							<reference ref="409453337"/>
+							<reference ref="578310161"/>
+							<reference ref="191964259"/>
+							<reference ref="487294649"/>
+							<reference ref="876474945"/>
+							<reference ref="776862623"/>
+						</array>
+						<reference key="parent" ref="546600418"/>
+						<string key="objectName">Bottom Controls</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">17</string>
+						<reference key="object" ref="881460401"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Play/Pause Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">18</string>
+						<reference key="object" ref="409453337"/>
+						<reference key="parent" ref="409850848"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">19</string>
+						<reference key="object" ref="578310161"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Total Time Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">83</string>
+						<reference key="object" ref="191964259"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Current Time Label</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">45</string>
+						<reference key="object" ref="487294649"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Caption Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">43</string>
+						<reference key="object" ref="876474945"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Video Quality Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">5Qd-b3-byZ</string>
+						<reference key="object" ref="776862623"/>
+						<reference key="parent" ref="409850848"/>
+						<string key="objectName">Fullscreen Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">54</string>
+						<reference key="object" ref="104598778"/>
+						<reference key="parent" ref="217490078"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">rJu-g6-2JN</string>
+						<reference key="object" ref="730615278"/>
+						<reference key="parent" ref="0"/>
+						<string key="objectName">Swipe Left</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">JnZ-7A-Kfb</string>
+						<reference key="object" ref="383337319"/>
+						<reference key="parent" ref="0"/>
+						<string key="objectName">Swipe Right</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">Ijk-30-8Su</string>
+						<reference key="object" ref="71793364"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="337262315"/>
+						</array>
+						<reference key="parent" ref="546600418"/>
+						<string key="objectName">BigPlayBGView</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">169-ch-vv0</string>
+						<reference key="object" ref="337262315"/>
+						<reference key="parent" ref="71793364"/>
+						<string key="objectName">Big Play Button</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">2Ll-CU-B7y</string>
+						<reference key="object" ref="232154149"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="93183498"/>
+							<reference ref="74221047"/>
+							<reference ref="692155064"/>
+						</array>
+						<reference key="parent" ref="217490078"/>
+						<string key="objectName">FailedView</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">ctK-AH-AMg</string>
+						<reference key="object" ref="93183498"/>
+						<reference key="parent" ref="232154149"/>
+						<string key="objectName">ReloadButton</string>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">dZP-az-ugO</string>
+						<reference key="object" ref="74221047"/>
+						<reference key="parent" ref="232154149"/>
+					</object>
+					<object class="IBObjectRecord">
+						<string key="id">HEj-cj-jAU</string>
+						<reference key="object" ref="692155064"/>
+						<reference key="parent" ref="232154149"/>
+					</object>
+				</array>
+			</object>
+			<dictionary class="NSMutableDictionary" key="flattenedProperties">
+				<string key="-1.CustomClassName">VKVideoPlayerView</string>
+				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<boolean value="NO" key="-1.showNotes"/>
+				<string key="-2.CustomClassName">UIResponder</string>
+				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<boolean value="NO" key="-2.showNotes"/>
+				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="1.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="1.showNotes"/>
+				<string key="103.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="103.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="103.showNotes"/>
+				<string key="104.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="104.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="104.showNotes"/>
+				<string key="105.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="105.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="105.showNotes"/>
+				<string key="169-ch-vv0.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<real value="0.0" key="169-ch-vv0.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<reference key="169-ch-vv0.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="169-ch-vv0.showNotes"/>
+				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="17.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="17.showNotes"/>
+				<string key="18.CustomClassName">VKScrubber</string>
+				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="18.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="18.showNotes"/>
+				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="19.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="19.showNotes"/>
+				<reference key="2Ll-CU-B7y.IBNSViewMetadataGestureRecognizers" ref="0"/>
+				<string key="2Ll-CU-B7y.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="3.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="3.showNotes"/>
+				<string key="31.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="31.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="31.showNotes"/>
+				<string key="32.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="32.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="32.showNotes"/>
+				<string key="37.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="37.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="37.showNotes"/>
+				<string key="40.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="40.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="40.showNotes"/>
+				<string key="43.CustomClassName">VKPickerButton</string>
+				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="43.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="43.showNotes"/>
+				<string key="45.CustomClassName">VKPickerButton</string>
+				<string key="45.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="45.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="45.showNotes"/>
+				<string key="49.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<boolean value="NO" key="49.showNotes"/>
+				<string key="54.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="54.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="54.showNotes"/>
+				<string key="56.CustomClassName">VKVideoPlayerLayerView</string>
+				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="56.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="56.showNotes"/>
+				<string key="59.CustomClassName">DTAttributedLabel</string>
+				<string key="59.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="59.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="59.showNotes"/>
+				<string key="5Qd-b3-byZ.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="5Qd-b3-byZ.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="5Qd-b3-byZ.showNotes"/>
+				<string key="61.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="61.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="61.showNotes"/>
+				<string key="62.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="62.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="62.showNotes"/>
+				<string key="63.CustomClassName">DTAttributedLabel</string>
+				<string key="63.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="63.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="63.showNotes"/>
+				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="83.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="83.showNotes"/>
+				<string key="89.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="89.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="89.showNotes"/>
+				<string key="92.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="92.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="92.showNotes"/>
+				<string key="HEj-cj-jAU.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="Ijk-30-8Su.IBNSViewMetadataGestureRecognizers" ref="0"/>
+				<string key="Ijk-30-8Su.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="JnZ-7A-Kfb.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<boolean value="NO" key="JnZ-7A-Kfb.showNotes"/>
+				<string key="LWl-fl-KpR.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="LWl-fl-KpR.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="LWl-fl-KpR.showNotes"/>
+				<string key="ctK-AH-AMg.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="dZP-az-ugO.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="lRL-G6-RP6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="lRL-G6-RP6.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="lRL-G6-RP6.showNotes"/>
+				<string key="rJu-g6-2JN.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<boolean value="NO" key="rJu-g6-2JN.showNotes"/>
+				<string key="xtv-gf-Qvy.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<reference key="xtv-gf-Qvy.IBUserGuides" ref="0"/>
+				<boolean value="NO" key="xtv-gf-Qvy.showNotes"/>
+			</dictionary>
+			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
+			<nil key="activeLocalization"/>
+			<dictionary class="NSMutableDictionary" key="localizations"/>
+			<nil key="sourceID"/>
+		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<int key="IBDocument.localizationMode">0</int>
+		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
+		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">YES</bool>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
+			<integer value="4600" key="NS.object.0"/>
+		</object>
+		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
+		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="VKVideoPlayer_cross.png">{17, 17}</string>
+			<string key="VKVideoPlayer_next.png">{21, 21}</string>
+			<string key="VKVideoPlayer_pause.png">{17, 17}</string>
+			<string key="VKVideoPlayer_play.png">{17, 17}</string>
+			<string key="VKVideoPlayer_play_big.png">{74, 74}</string>
+			<string key="VKVideoPlayer_rewind.png">{27, 21}</string>
+			<string key="VKVideoPlayer_zoom_in.png">{16, 16}</string>
+			<string key="VKVideoPlayer_zoom_out.png">{16, 16}</string>
+			<string key="bg_video.png">{320, 180}</string>
+			<string key="video_play.png">{68, 68}</string>
+		</dictionary>
+	</data>
+</archive>

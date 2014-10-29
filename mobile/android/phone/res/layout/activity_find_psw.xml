@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/login_header"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            <ImageView
+                    android:id="@+id/iv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_mail"/>
+
+            <EditText
+                    android:id="@+id/et_login_email"
+                    android:layout_toRightOf="@id/iv_mail"
+                    android:layout_toLeftOf="@+id/iv_email_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/loginEditor"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"/>
+
+            <ImageView
+                    android:id="@+id/iv_email_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:visibility="invisible"
+                    android:background="@drawable/validate_true"/>
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#666666"/>
+
+        <TextView
+                android:id="@+id/tv_send"
+                android:textColor="@android:color/white"
+                android:background="@drawable/blue_btn_selector"
+                android:layout_width="match_parent"
+                android:layout_marginTop="45dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="21sp"
+                android:text="@string/send_email"/>
+    </LinearLayout>
+
+
+</LinearLayout>

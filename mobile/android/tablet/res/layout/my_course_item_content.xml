@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/setting_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <LinearLayout
+                android:id="@+id/btn_back_normal"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/setting_back_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="false"
+                    android:src="@drawable/icon_button_back_normal"/>
+
+            <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/back"
+                    android:textColor="@color/txt_setting"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--     <ScrollView -->
+    <!--         android:id="@+id/scroll_base" -->
+    <!--         android:layout_width="match_parent" -->
+    <!--         android:layout_height="match_parent" -->
+    <!--         android:background="#e6e6e6" > -->
+
+    <!--         <LinearLayout -->
+    <!--             android:layout_width="match_parent" -->
+    <!--             android:layout_height="wrap_content" -->
+    <!--             android:background="#e0e0e0" -->
+    <!--             android:orientation="vertical" > -->
+
+    <FrameLayout
+            android:id="@+id/surfaceView_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:visibility="invisible">
+
+        <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout
+                android:id="@+id/rv_controll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/player_bg">
+
+            <TextView
+                    android:id="@+id/time_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="00:00:00"/>
+            <Button
+                    android:id="@+id/play"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/stop"
+                    android:layout_above="@id/time_play"/>
+
+            <SeekBar
+                    android:id="@+id/seekbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_toLeftOf="@+id/scale"
+                    android:layout_toRightOf="@id/play"
+                    android:background="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_bar_seletor"/>
+
+            <TextView
+                    android:id="@+id/time_totle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="01:12:33"/>
+
+            <Button
+                    android:id="@+id/scale"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@id/time_totle"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/full_screen"/>
+        </RelativeLayout>
+
+        <FrameLayout
+                android:id="@+id/operation_volume_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:padding="0dip"
+                android:visibility="invisible">
+
+            <ImageView
+                    android:id="@+id/operation_bg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_volumn_bg"/>
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:paddingBottom="25dip">
+
+                <ImageView
+                        android:id="@+id/operation_full"
+                        android:layout_width="94dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/video_num_bg"/>
+
+                <ImageView
+                        android:id="@+id/operation_percent"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:scaleType="matrix"
+                        android:src="@drawable/video_num_front"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <ImageView
+                android:id="@+id/iv_course_info_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/allcourse_cover_default"
+                android:scaleType="centerCrop"
+                android:visibility="visible"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+        <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:src="@drawable/button_play_video_normal"
+                android:visibility="visible"/>
+    </FrameLayout>
+
+    <WebView
+            android:id="@+id/wv_course_item_intro_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <!--         </LinearLayout> -->
+    <!--     </ScrollView> -->
+
+</LinearLayout>

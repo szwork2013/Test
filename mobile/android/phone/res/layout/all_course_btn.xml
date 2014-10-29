@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="11dp"
+        android:layout_height="56dp">
+
+    <TextView
+            android:id="@+id/tv_all_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/all_courses"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:paddingRight="10dp"
+            android:textColor="#5a7dbc"
+            android:background="@drawable/allcourses_up"/>
+
+</LinearLayout>

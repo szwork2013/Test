@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/dynamic_collect_card"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/find_course_item_bg"
+              android:padding="18dp"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_name"
+                android:textColor="#45494c"
+                android:text="武林绝杀技"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                />
+        <ImageView
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:id="@+id/update_course_type_img"
+                android:src="@drawable/teachers_button_link_def"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="25dp"
+                />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/content_button_time_disab"
+                android:layout_gravity="center_vertical|left"
+                />
+
+        <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#45494c"
+                android:text="20:48"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_img"
+                android:src="@drawable/default_160_100"
+                />
+
+        <TextView
+                android:id="@+id/update_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="您收藏的导学课《互联网》开始了新的班次，现在可以加入学习了，点击查看！"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+    </LinearLayout>
+</LinearLayout>

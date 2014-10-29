@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+        >
+
+    <RelativeLayout
+            android:id="@+id/rl_course_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff">
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+
+            <ImageView
+                    android:id="@+id/iv_courseBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/allcourse_cover_default"
+                    />
+            <TextView
+                    android:id="@+id/colledgeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/bg_course_panel_schoole"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="  北京航空航天大学  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/course_panel_school_name"
+                    android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout1"
+                android:orientation="vertical"
+                >
+            <TextView
+                    android:id="@+id/courseType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:singleLine="true"
+                    android:text="[互联网营销 ]"
+                    android:textColor="@color/txt_crouse_panel_crouse"
+                    android:textSize="14sp"
+                    android:textStyle="italic"/>
+
+            <TextView
+                    android:id="@+id/courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="互联网营销"
+                    android:textColor="#ff9933"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/instructor_declarer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text="互联网营销"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+
+            <TextView
+                    android:id="@+id/course_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:paddingBottom="19dp"
+                    android:maxLines="2"
+                    android:textColor="#999999"
+                    android:ellipsize="end"
+                    android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

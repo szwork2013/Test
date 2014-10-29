@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="SWIFT语言入门"
+              android:textColor="@color/black"
+              android:textSize="15sp"
+              android:layout_marginLeft="10dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="一口价：0.01元"
+              android:textColor="@color/black"
+              android:textSize="15sp"
+              android:layout_marginLeft="10dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="支付宝支付"
+              android:id="@+id/tv_alipay"
+              android:textColor="@color/red"
+              android:textSize="20sp"
+              android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

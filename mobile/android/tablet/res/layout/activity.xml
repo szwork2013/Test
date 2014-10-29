@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#e6e6e6"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <ImageButton
+                android:id="@+id/btn_togo"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:background="@drawable/all_course_menu"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/btn_togo"
+                android:gravity="center"
+                android:text="最近活动"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv1"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@+id/tv2"
+                android:background="@drawable/activity_announcement"
+                android:gravity="center"
+                android:text="@string/course_announment"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv2"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/activity_assigment"
+                android:gravity="center"
+                android:text="@string/assigement_dss"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv3"
+                android:layout_width="168dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/tv2"
+                android:background="@drawable/activity_discuss"
+                android:gravity="center"
+                android:text="@string/discussion"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/loading_layout"/>
+
+    <ListView
+            android:id="@+id/lv_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="12dp"
+            android:padding="10dp"
+            android:visibility="invisible"/>
+
+</LinearLayout>

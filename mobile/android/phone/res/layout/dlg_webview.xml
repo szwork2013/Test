@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:id="@+id/rl_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1a1a1a"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/button_top_bg"
+                android:text="@string/go_signup"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+        <ImageView
+                android:id="@+id/iv_login_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/kaikeba_logo"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_kaikeba_a"
+                android:layout_marginLeft="6dp"/>
+
+        <ImageView
+                android:id="@+id/iv_login_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/kaikeba_logo"
+                android:layout_centerVertical="true"
+                android:src="@drawable/button_back"
+                />
+
+    </RelativeLayout>
+
+    <include layout="@layout/loading_layout"/>
+
+    <include layout="@layout/loading_fial_layout"/>
+
+    <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+</LinearLayout>

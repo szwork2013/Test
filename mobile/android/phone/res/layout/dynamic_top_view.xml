@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:orientation="horizontal"
+              android:id="@+id/dynamic_top_view"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:background="@color/blue"
+        >
+    <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dynamic_top_txt"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical|bottom"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="看AWS继续观观看AWS继续观看继续观看继续观看AWS今年七岁了”至08:54"
+            />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_watch_selector"
+            android:layout_gravity="bottom"
+            />
+
+    <ImageView
+            android:id="@+id/dynamic_top_img"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_top_selector"
+            />
+</LinearLayout>

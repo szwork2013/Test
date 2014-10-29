@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <LinearLayout
+                android:id="@+id/btn_back_normal"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/setting_back_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="false"
+                    android:src="@drawable/icon_button_back_normal"/>
+
+            <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/back"
+                    android:textColor="@color/txt_setting"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/next"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_nextone"/>
+
+        <ImageView
+                android:id="@+id/previous"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/next"
+                android:src="@drawable/icon_previousone"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+            android:id="@+id/ann_detail_eView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rv"
+            android:childDivider="#e6e6e6"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"/>
+
+    <TextView
+            android:id="@+id/tv_reply_all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/reply_box_bg"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="@string/reply"
+            android:textColor="#3d454c"
+            android:textSize="16sp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/reply_box_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:text="@string/reply_ann"
+            android:textColor="#aaaeb2"
+            android:textSize="16sp"/>
+
+</RelativeLayout>

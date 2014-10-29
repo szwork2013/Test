@@ -1,0 +1,181 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kaikeba.mitv"
+    android:versionCode="658"
+    android:versionName="v3.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+     <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+   	<uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+   	<uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+   	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 推送所需新加权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="getui.permission.GetuiService"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!--自定义权限-->
+    <permission
+            android:name="getui.permission.GetuiService"
+            android:protectionLevel="normal">
+    </permission>
+    <uses-feature 
+        android:name="android.hardware.type.television"
+        android:required="true"/>
+
+    <application
+        android:icon="@drawable/icon_launcher_mibox"
+        android:label="@string/app_name"
+        android:name="com.kaikeba.ContextUtil"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.kaikeba.mitv.LoadingActivity"
+            android:screenOrientation="landscape" 
+            android:hardwareAccelerated ="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+		    android:name="com.kaikeba.mitv.CourseActivity"  />
+        <activity 
+		    android:name="com.kaikeba.mitv.UnitPageActivity" >
+        </activity>
+
+        <activity
+                android:name="com.kaikeba.mitv.MainActivity"
+                android:screenOrientation="landscape"
+                android:hardwareAccelerated ="true"
+                android:theme="@android:style/Theme.Light.NoTitleBar"
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name" >
+
+        </activity>
+        <!-- UMeng -->
+
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService" >
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data android:value="5375813b56240b40ae04be83" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="unknown" android:name="UMENG_CHANNEL"/>
+        <receiver
+                android:name="com.kaikeba.mitv.PushTouChuanReceiver"
+                android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.KCj5oOcIaT8E9RaW80vTm2" />
+            </intent-filter>
+        </receiver>
+        <!--个推SDK配置开始-->
+        <!--置的第三方参数属性-->
+        <meta-data
+                android:name="PUSH_APPKEY"
+                android:value="v0dS7DeUUy9GZYekrH77g3"/>
+        <meta-data
+                android:name="PUSH_APPID"
+                android:value="KCj5oOcIaT8E9RaW80vTm2"/>
+        <meta-data
+                android:name="PUSH_APPSECRET"
+                android:value="UgAchEVdrAA9IPj57mzepA"/>
+        <meta-data
+                android:name="PUSH_GROUPID"
+                android:value=""/>
+        <!--配置SDK核心服务-->
+        <service
+                android:name="com.igexin.sdk.PushService"
+                android:exported="true"
+                android:label="NotificationCenter"
+                android:process=":pushservice">
+        </service>
+
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+        <activity
+                android:name="com.igexin.sdk.PushActivity"
+                android:excludeFromRecents="true"
+                android:exported="false"
+                android:process=":pushservice"
+                android:taskAffinity="com.igexin.sdk.PushActivityTask"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <activity android:name=".ViewCourseActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--配置弹框activity-->
+        <activity android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+                  android:configChanges="orientation|keyboard|keyboardHidden"
+                  android:excludeFromRecents="true"
+                  android:process=":pushservice"
+                  android:taskAffinity="android.task.myServicetask"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:exported="false"/>
+        <receiver android:name="com.igexin.getuiext.service.PayloadReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <!--这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改-->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <!--android:name="com.igexin.sdk.action.第三方的appId"-->
+                <action android:name="com.igexin.sdk.action.etVyv7RHJ28BqN3KKCtKJ6"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.igexin.getuiext.service.GetuiExtService"
+                 android:process=":pushservice"/>
+        <!--个推download模块配置-->
+        <service android:name="com.igexin.download.DownloadService"
+                 android:process=":pushservice"/>
+        <receiver
+                android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider
+                android:name="com.igexin.download.DownloadProvider"
+                android:process=":pushservice"
+                android:authorities="downloads.com.kaikeba.phone"/>
+        <!--android:authorities="downloads.第三方包名"-->
+        <!--===========================================================================-->
+    </application>
+
+
+</manifest>

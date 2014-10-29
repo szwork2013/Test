@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/sina"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:layout_marginRight="@dimen/public_apk_image_view_small_margin_horizon"
+            android:layout_toLeftOf="@+id/tencent"
+            android:background="@drawable/button_sina_normal"
+            android:scaleType="fitXY"/>
+
+    <ImageView
+            android:id="@+id/tencent"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:background="@drawable/button_tencent_normal"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"/>
+
+    <ImageView
+            android:id="@+id/wechat"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:layout_marginLeft="@dimen/public_apk_image_view_small_margin_horizon"
+            android:layout_toRightOf="@+id/tencent"
+            android:background="@drawable/button_wechat_normal"
+            android:scaleType="fitXY"/>
+
+    <ImageView
+            android:id="@+id/iv_tencent"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_below="@id/tencent"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:src="@drawable/apk_tencent"
+            android:layout_centerHorizontal="true"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n关注开课吧"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_tencent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_tencent"
+            android:layout_alignRight="@+id/iv_tencent"
+            android:layout_alignStart="@+id/iv_tencent"/>
+
+    <ImageView
+            android:id="@+id/iv_sina"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_marginRight="@dimen/public_apk_image_view_big_margin_horizon"
+            android:layout_below="@id/tencent"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:layout_toLeftOf="@id/iv_tencent"
+            android:src="@drawable/apk_sina"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n关注开课吧"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_sina"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_sina"
+            android:layout_alignRight="@+id/iv_sina"
+            android:layout_alignStart="@+id/iv_sina"/>
+
+    <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_marginLeft="@dimen/public_apk_image_view_big_margin_horizon"
+            android:layout_below="@id/tencent"
+            android:layout_toRightOf="@id/iv_tencent"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:src="@drawable/apk_wechat"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n关注开课吧"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_wechat"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_wechat"
+            android:layout_alignRight="@+id/iv_wechat"
+            android:layout_alignStart="@+id/iv_wechat"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新浪微博"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/sina"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/sina"
+            android:layout_alignRight="@+id/sina"
+            android:layout_alignStart="@+id/sina"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="腾讯微博"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/tencent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/tencent"
+            android:layout_alignRight="@+id/tencent"
+            android:layout_alignStart="@+id/tencent"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="腾讯公众账号"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/wechat"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/wechat"
+            android:layout_alignRight="@+id/wechat"
+            android:layout_alignStart="@+id/wechat"/>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/questionrarea_bg"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <LinearLayout
+                android:id="@+id/btn_back_normal"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/setting_back_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="false"
+                    android:src="@drawable/icon_button_back_normal"/>
+
+            <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/back"
+                    android:textColor="@color/txt_setting"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/next"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_nextone"/>
+
+        <ImageView
+                android:id="@+id/previous"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/next"
+                android:src="@drawable/icon_previousone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_below="@id/rv"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#fe5d5d"
+                android:textSize="28sp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到期日期: "
+                    android:textColor="#aaaeb2"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:id="@+id/tv_due_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#aaaeb2"
+                    android:textSize="15sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="满分: "
+                    android:textColor="#aaaeb2"
+                    android:textSize="15sp"/>
+
+            <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#aaaeb2"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_header"
+            android:background="#e6e6e6"/>
+
+    <WebView
+            android:id="@+id/wv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view"/>
+
+</RelativeLayout>

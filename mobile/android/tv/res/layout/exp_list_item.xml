@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_course_video_list_item_padding"
+        android:background="@color/color_cihei">
+
+
+    <LinearLayout
+            android:id="@+id/topRowLinearLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/view_course_video_list_item_padding2"
+            android:paddingRight="@dimen/view_course_video_list_item_padding2"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="@dimen/view_course_video_list_view_item_image_width"
+                android:layout_height="@dimen/view_course_video_list_view_item_image_width"
+                android:src="@drawable/icon_video"
+                android:id="@+id/imageView"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第01讲-导学内容"
+                android:gravity="center_vertical"
+                android:id="@+id/courseNameTextView"
+                android:textColor="#999999"
+                android:textSize="@dimen/view_course_normal_text_size"
+                android:layout_marginLeft="10dp"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="0dip"
+                android:layout_weight="1">
+        </View>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(06:08)"
+                android:textColor="#999999"
+                android:visibility="gone"
+                android:id="@+id/courseDurationTextView"
+                android:layout_marginRight="12dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次观看到 02:23"
+            android:textColor="#999999"
+            android:textSize="@dimen/view_course_small_text_size"
+            android:layout_below="@+id/topRowLinearLayout"
+            android:layout_marginLeft="@dimen/view_course_video_list_view_item_last_watch_point_margin_left"
+            android:layout_marginTop="@dimen/view_course_video_list_last_play_record_text_view_margin_top"
+            android:visibility="gone"
+            android:id="@+id/watchProgressTextView"/>
+</RelativeLayout>

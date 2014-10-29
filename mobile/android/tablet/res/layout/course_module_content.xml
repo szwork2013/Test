@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+
+    <ExpandableListView
+            android:id="@+id/expandableCourseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6"
+            android:cacheColorHint="@android:color/transparent"
+            android:childDivider="#bbbbbb"
+            android:divider="#b9b9b9"
+            android:dividerHeight="1dip"/>
+
+    <include
+            layout="@layout/loading_layout"
+            />
+
+</RelativeLayout>

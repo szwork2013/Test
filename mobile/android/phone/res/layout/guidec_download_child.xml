@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="57dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="7dp"
+        >
+
+    <ImageView
+            android:id="@+id/course_selected"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/download_circle">
+    </ImageView>
+
+
+    <TextView
+            android:id="@+id/course_name"
+            android:layout_width="286dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/course_selected"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textColor="#5c5f66"
+            />
+    <ImageView
+            android:id="@+id/load_video_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/course_button_download"/>
+</RelativeLayout>

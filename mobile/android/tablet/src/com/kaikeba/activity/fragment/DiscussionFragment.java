@@ -1,0 +1,181 @@
+package com.kaikeba.activity.fragment;
+
+
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.*;
+import android.widget.AdapterView.OnItemClickListener;
+import com.kaikeba.common.api.DiscusstionAPI;
+import com.kaikeba.common.entity.Announcement;
+import com.kaikeba.common.util.DateUtils;
+import com.kaikeba.common.util.ImgLoaderUtil;
+import com.kaikeba.phone.R;
+import org.jsoup.Jsoup;
+
+import java.util.ArrayList;
+
+
+/**
+ * 讨论Fragment
+ *
+ * @author Super Man
+ */
+public class DiscussionFragment extends Fragment {
+
+    private ListView myCourseDisListView;
+    private Handler handler = new Handler();
+    private ArrayList<Announcement> disList;
+    private String courseId;
+    private OnItemClickListener listener = new OnItemClickListener() {
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position,
+                                long id) {
+            // TODO Auto-generated method stub
+            Announcement ann = disList.get(position);
+            AnnouncementDetailFragment courseAnnFragment = new AnnouncementDetailFragment();
+            Bundle b = new Bundle();
+            b.putSerializable("announcement", ann);
+            b.putSerializable("announcements", disList);
+            b.putString("courseId", courseId);
+            courseAnnFragment.setArguments(b);
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.moduleDiscusion_container, courseAnnFragment).addToBackStack("讨论");
+            ft.commit();
+        }
+    };
+    private LinearLayout view_loading;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.my_course_discussion, container, false);
+        view_loading = (LinearLayout) v.findViewById(R.id.view_loading);
+        myCourseDisListView = (ListView) v.findViewById(R.id.myCourseDisListView);
+        myCourseDisListView.setOnItemClickListener(listener);
+        return v;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        courseId = getArguments().getString(getResources().getString(R.string.courseId));
+        ImgLoaderUtil.threadPool.submit(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                disList = DiscusstionAPI.getAllDiscussion(courseId);
+                handler.post(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        view_loading.setVisibility(View.GONE);
+                        if (disList == null || disList.isEmpty()) {
+                            Toast.makeText(getActivity(), "暂无讨论", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        // TODO Auto-generated method stub
+                        myCourseDisListView.setAdapter(new MyCourseAnnceAdapter(disList));
+                    }
+                });
+            }
+        });
+    }
+
+    class MyCourseAnnceAdapter extends BaseAdapter {
+
+        private ArrayList<Announcement> disList;
+        private LayoutInflater inflater;
+
+        public MyCourseAnnceAdapter(ArrayList<Announcement> disList) {
+            this.disList = disList;
+            inflater = LayoutInflater.from(getActivity());
+        }
+
+        @Override
+        public int getCount() {
+            // TODO Auto-generated method stub
+            return disList.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            // TODO Auto-generated method stub
+            return disList.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            // TODO Auto-generated method stub
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            Announcement ann = disList.get(position);
+            final ViewHolder holder;
+            if (convertView == null) {
+                convertView = inflater.inflate(R.layout.my_course_anncement_item, null);
+                holder = new ViewHolder(convertView);
+                convertView.setTag(holder);
+            } else {
+                holder = (ViewHolder) convertView.getTag();
+            }
+            holder.title.setText(ann.getTitle());
+            holder.post_at.setText(DateUtils.getCourseStartTime(ann.getPosted_at()));
+            if ("0".equals(ann.getDiscussion_subentry_count())) {
+                holder.discussion_subentry_count.setVisibility(View.GONE);
+            } else {
+                holder.discussion_subentry_count.setVisibility(View.VISIBLE);
+                holder.discussion_subentry_count.setText(ann.getDiscussion_subentry_count());
+            }
+            holder.avatar_image_url.setImageBitmap(ImgLoaderUtil.getLoader()
+                    .loadImg(ann.getAuthor().getAvatar_image_url(),
+                            new ImgLoaderUtil.ImgCallback() {
+
+                                @Override
+                                public void refresh(Bitmap bitmap) {
+                                    // TODO Auto-generated method stub
+                                    holder.avatar_image_url
+                                            .setImageBitmap(bitmap);
+                                }
+                            }, handler));
+            holder.message.setText(Jsoup.parse(ann.getMessage()).text());
+            holder.display_name.setText(ann.getAuthor().getDisplay_name());
+            if (ann.getAttachments() != null && !ann.getAttachments().isEmpty()) {
+                holder.iv_load.setVisibility(View.VISIBLE);
+            } else {
+                holder.iv_load.setVisibility(View.GONE);
+            }
+            return convertView;
+        }
+
+        class ViewHolder {
+            TextView title;
+            TextView post_at;
+            TextView discussion_subentry_count;
+            TextView display_name;
+            TextView message;
+            ImageView avatar_image_url;
+            ImageView iv_load;
+
+            ViewHolder(View v) {
+                title = (TextView) v.findViewById(R.id.title);
+                post_at = (TextView) v.findViewById(R.id.posted_at);
+                discussion_subentry_count = (TextView) v.findViewById(R.id.discussion_subentry_count);
+                display_name = (TextView) v.findViewById(R.id.user_name);
+                message = (TextView) v.findViewById(R.id.message);
+                avatar_image_url = (ImageView) v.findViewById(R.id.iv_avatar);
+                iv_load = (ImageView) v.findViewById(R.id.iv_load);
+            }
+        }
+    }
+}

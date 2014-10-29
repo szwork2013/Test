@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="course_module">20sp</dimen>
+    <dimen name="btn_query_course">18sp</dimen>
+    <dimen name="nav_btn_m">20sp</dimen>
+    <dimen name="nav_btn_m_press">25sp</dimen>
+    <dimen name="course_panel_course_name">18sp</dimen>
+    <dimen name="course_panel_instructor_name">16sp</dimen>
+    <dimen name="course_panel_instructor_title">14sp</dimen>
+    <dimen name="course_panel_school_name">16sp</dimen>
+    <dimen name="course_panel_badge0">14sp</dimen>
+    <dimen name="course_panel_badge1">12sp</dimen>
+    <dimen name="course_panel_badge2">8sp</dimen>
+    <!-- dialog -->
+    <dimen name="dlg_title">22sp</dimen>
+    <dimen name="dlg_btn">22sp</dimen>
+    <dimen name="popup_btn_title">18sp</dimen>
+    <dimen name="dlg_edit_tip">18sp</dimen>
+    <!-- drawer -->
+    <dimen name="drawer_course_name">20sp</dimen>
+    <dimen name="drawer_course_startat">15sp</dimen>
+    <dimen name="drawer_course_price">24sp</dimen>
+    <dimen name="drawer_schoole_name">16sp</dimen>
+    <dimen name="drawer_free_trial">18sp</dimen>
+    <dimen name="drawer_payment">14sp</dimen>
+    <dimen name="drawer_tab_title">17sp</dimen>
+
+    <dimen name="my_course_name">18sp</dimen>
+
+    <!-- course introduce nav -->
+    <dimen name="course_nav_title">13sp</dimen>
+
+    <!-- setting -->
+    <dimen name="setting_item_name">21sp</dimen>
+
+    <!-- zero -->
+    <dimen name="zero">0dp</dimen>
+
+    <!-- 微专业动画中初始化的固定宽高-->
+    <dimen name="major_course_width">140dp</dimen>
+    <dimen name="micro_course_height">36dp</dimen>
+    <dimen name="major_course_name_height">38dp</dimen>
+    <dimen name="major_course_height">151dp</dimen>
+    <dimen name="course_bg_height">156dp</dimen>
+</resources>

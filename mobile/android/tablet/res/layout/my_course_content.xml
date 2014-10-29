@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical"
+              android:background="@color/color_setting_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <ImageButton
+                android:id="@+id/btn_togo"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/all_course_menu"/>
+
+        <TextView
+                android:id="@+id/module_allcourse"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/btn_togo"
+                android:gravity="center"
+                android:text="@string/my_courses"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/loading_layout"/>
+
+    <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:stretchMode="columnWidth"
+            />
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/myCourseListView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:divider="@null" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:paddingRight="10dp" /> -->
+
+    <TextView
+            android:id="@+id/no_mycourse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/go_mycourse"
+            android:textColor="@color/shadow_black"
+            android:textSize="@dimen/btn_query_course"
+            android:visibility="gone"/>
+
+</LinearLayout>

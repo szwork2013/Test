@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_choice"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:background="@drawable/itembg_checked"
+        >
+
+    <TextView
+            android:id="@+id/tv_quiz_title"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="第一周测验"
+            android:textSize="20sp"
+            android:textColor="@color/shadow_black"/>
+
+    <ImageView
+            android:id="@+id/iv_quiz_single_choice_mark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:background="@drawable/checkmark_normal"
+            android:layout_marginLeft="70dp"
+            />
+
+</LinearLayout>

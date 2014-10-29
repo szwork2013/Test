@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_right_nav"
+              android:layout_width="59dp"
+              android:layout_height="254dp"
+              android:orientation="vertical"
+              android:background="@drawable/button_function_bg"
+        >
+
+    <ImageButton
+            android:id="@+id/iv_quiz_right_nav_save"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:src="@drawable/button_function_save_normal"
+            android:background="@drawable/selector_nav_btn_"
+            android:scaleType="centerInside"
+            />
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/splitline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <ImageButton
+            android:id="@+id/iv_quiz_right_nav_submit"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:src="@drawable/button_function_updata_normal"
+            android:background="@drawable/selector_nav_btn_"
+            android:scaleType="centerInside"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/splitline"/>
+
+    <ImageButton
+            android:id="@+id/iv_quiz_right_nav_back"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:src="@drawable/button_function_back_normal"
+            android:background="@drawable/selector_nav_btn_"
+            android:scaleType="centerInside"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/splitline"/>
+
+    <ImageButton
+            android:id="@+id/iv_quiz_right_nav_next"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@drawable/selector_nav_btn_"
+            android:src="@drawable/button_function_next_normal"
+            android:scaleType="centerInside"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main nav -->
+    <color name="txt_nav_btn_normal">#A0A0A0</color>
+    <color name="txt_nav_btn_selected">#B0B0B0</color>
+    <color name="txt_nav_account">#E0E0E0</color>
+    <!-- promo slider -->
+    <color name="txt_promo_course_title">#E0E0E0</color>
+    <color name="txt_promo_course_intro">#A0A0A0</color>
+    <color name="txt_promo_btn_open">#E0E0E0</color>
+    <color name="bg_promo_info">#E61A1A1A</color>
+    <!-- crouse panel -->
+    <color name="txt_crouse_panel_schoole">#FFFFFF</color>
+    <color name="txt_crouse_panel_crouse">#14171a</color>
+    <color name="txt_crouse_panel_instructor_name">#FFFFFF</color>
+    <color name="txt_crouse_panel_instructor_title">#A0A0A0</color>
+    <color name="txt_crouse_panel_badge">#FFFFFF</color>
+    <color name="bg_course_panel_schoole">#B31A1A1A</color>
+    <!-- dialog -->
+    <color name="txt_dlg_title">#FFFFFF</color>
+    <color name="txt_dlg_btn_white">#FFFFFF</color>
+    <color name="txt_dlg_btn_gray">#505050</color>
+    <color name="txt_dlg_edit_placeholder">#808080</color>
+    <color name="txt_dlg_edit_tip">#505050</color>
+    <color name="txt_dlg_edit_show">#A0A0A0</color>
+    <color name="txt_popup_btn_title">#E0E0E0</color>
+    <!-- drawer -->
+    <color name="bg_drawer_bg">#80000000</color>
+    <color name="txt_drawer_course_name">#FFFFFF</color>
+    <color name="txt_drawer_course_startat">#BBBBBB</color>
+    <color name="txt_drawer_course_price">#FFFFFF</color>
+    <color name="txt_drawer_schoole_name">#FFFFFF</color>
+    <color name="txt_drawer_free_trial">#666666</color>
+    <color name="txt_drawer_payment">#FFFFFF</color>
+    <color name="txt_drawer_tab_title">#444444</color>
+    <!-- shadow -->
+    <color name="shadow_white">#F0FFFFFF</color>
+    <color name="shadow_black">#333333</color>
+    <!-- setting -->
+    <color name="txt_setting">#3d454c</color>
+    <color name="txt_setting_unavailable">#A0A0A0</color>
+    <color name="already_apply">#75bf00</color>
+    <color name="end_apply">#666666</color>
+    <color name="unknow_apply">#E59921</color>
+
+    <color name="lucency_bg">#00000000</color>
+    <color name="quiz_title">#333333</color>
+    <color name="question_text">#666666</color>
+    <color name="choose_text">#b2b2b2</color>
+    <color name="choose_text_a">#999999</color>
+
+    <color name="course_type_check">#14171a</color>
+    <color name="course_type_normal">#616366</color>
+    <color name="color_setting_bg">#e6e6e6</color>
+    <color name="setting_press_true">#f5f5f5</color>
+    <color name="setting_back_press_true">#ececec</color>
+    <color name="setting_back_press_false">#f8f8f8</color>
+
+    <color name="my_course_is_in_yes">#2fa1db</color>
+    <color name="my_course_is_in_no">#919699</color>
+
+    <color name="download_loading">#aaaeb2</color>
+    <color name="download_complete">#3d454c</color>
+
+    <color name="download_title">#24b2fa</color>
+    <color name="download_space">#3aa8e7</color>
+</resources>

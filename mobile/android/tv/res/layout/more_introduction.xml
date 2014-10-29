@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/more_content_padding_left"
+                android:orientation="vertical">
+
+    <ImageView android:id="@+id/more_blue_bar"
+               android:layout_width="@dimen/more_introduction_blue_bar_width"
+               android:layout_height="@dimen/more_introduction_blue_bar_height"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_blue_bar"
+               android:layout_marginTop="@dimen/more_introduction_blue_bar_margin_top"
+               android:layout_marginLeft="@dimen/more_introduction_blue_bar_margin_left"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="开课吧"
+              android:textColor="@color/more_tag_font_color"
+              android:textSize="@dimen/more_introduction_title_text_size"
+              android:layout_marginLeft="@dimen/more_introduction_title_margin_left"
+              android:layout_marginTop="@dimen/more_introduction_title_margin_top"
+              android:layout_toRightOf="@id/more_blue_bar"
+            />
+
+    <TextView android:id="@+id/more_text_line_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="开课吧是一家专注于泛IT学科的综合在线教育服务机构，积极探索在"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_blue_bar"
+              android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            />
+
+    <TextView android:id="@+id/more_text_line_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="线教育模式创新:"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_text_line_1"
+              android:layout_marginTop="@dimen/more_introduction_content_line_gap"
+            />
+
+    <ImageView android:id="@+id/more_icon_1_1"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_1_1"
+               android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+               android:layout_alignLeft="@id/more_blue_bar"
+               android:layout_below="@id/more_text_line_2"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="前沿科技  专业技能"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_1_1"
+              android:layout_alignTop="@id/more_icon_1_1"
+            />
+
+
+    <ImageView android:id="@+id/more_icon_1_2"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_1_2"
+               android:layout_toRightOf="@id/more_icon_1_1"
+               android:layout_alignTop="@id/more_icon_1_1"
+               android:layout_marginLeft="@dimen/more_introduction_icon_margin_left"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="创意设计  精细制作"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_1_2"
+              android:layout_alignTop="@id/more_icon_1_2"
+            />
+
+    <ImageView android:id="@+id/more_icon_2_1"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_2_1"
+               android:layout_marginTop="@dimen/more_introduction_icon_margin_top"
+               android:layout_alignLeft="@id/more_blue_bar"
+               android:layout_below="@id/more_icon_1_1"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="线上导学  线下交互"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_2_1"
+              android:layout_alignTop="@id/more_icon_2_1"
+            />
+
+
+    <ImageView android:id="@+id/more_icon_2_2"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_2_2"
+               android:layout_toRightOf="@id/more_icon_2_1"
+               android:layout_alignTop="@id/more_icon_2_1"
+               android:layout_marginLeft="@dimen/more_introduction_icon_margin_left"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="课程认证  学分置换"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_2_2"
+              android:layout_alignTop="@id/more_icon_2_2"
+            />
+
+    <ImageView android:id="@+id/more_icon_3_1"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_3_1"
+               android:layout_marginTop="@dimen/more_introduction_icon_margin_top"
+               android:layout_alignLeft="@id/more_blue_bar"
+               android:layout_below="@id/more_icon_2_1"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="云端架构  全新MOOC"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_3_1"
+              android:layout_alignTop="@id/more_icon_3_1"
+            />
+
+
+    <ImageView android:id="@+id/more_icon_3_2"
+               android:layout_width="@dimen/more_introduction_icon_width"
+               android:layout_height="@dimen/more_introduction_icon_width"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_icon_3_2"
+               android:layout_toRightOf="@id/more_icon_3_1"
+               android:layout_alignTop="@id/more_icon_3_1"
+               android:layout_marginLeft="@dimen/more_introduction_icon_margin_left"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="批量许可  定制服务"
+              android:textSize="@dimen/more_introduction_icon_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginTop="@dimen/more_introduction_icon_text_margin_top"
+              android:layout_marginLeft="@dimen/more_introduction_icon_text_margin_left"
+              android:layout_toRightOf="@id/more_icon_3_2"
+              android:layout_alignTop="@id/more_icon_3_2"
+            />
+
+</RelativeLayout>

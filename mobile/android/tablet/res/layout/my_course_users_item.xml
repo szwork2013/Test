@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="108dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+        >
+
+    <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/avatar_default"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+
+        <TextView
+                android:id="@+id/tv_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="施京松"
+                android:textColor="@color/module_child_text"
+                android:textSize="16sp"
+                />
+
+        <TextView
+                android:id="@+id/tv_shortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_userName"
+                android:text="Dr.Shi"
+                android:textColor="@color/unit_child_lock"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="123.qq.com"
+                android:textColor="@color/unit_child_lock"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

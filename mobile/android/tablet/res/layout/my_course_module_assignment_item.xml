@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+    <View
+            android:id="@+id/split_img"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ebebeb"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+    <TextView
+            android:id="@+id/tv_assignmeng_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/split_img"
+            android:layout_toLeftOf="@+id/tv_assignmeng_item_time"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#3d454c"
+            android:text="第一周-第一周测验"
+            />
+
+    <!--      <TextView  -->
+    <!--         android:id="@+id/tv_end_date" -->
+    <!--         android:layout_width="60dp" -->
+    <!--         android:layout_height="match_parent" -->
+    <!--         android:layout_below="@id/split_img" -->
+    <!--         android:gravity="right" -->
+    <!--         android:paddingTop="15dp" -->
+    <!--         android:textSize="15sp" -->
+    <!--         android:textColor="#666666" -->
+    <!--         android:layout_toLeftOf="@+id/tv_assignmeng_item_time" -->
+    <!--         android:text="截止:" -->
+    <!--         /> -->
+
+    <TextView
+            android:id="@+id/tv_assignmeng_item_time"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/split_img"
+            android:layout_toLeftOf="@+id/tv_assignmeng_item_point"
+            android:layout_marginRight="80dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#aaaeb2"
+            android:text="2013-12-12"
+            />
+
+    <TextView
+            android:id="@+id/tv_assignmeng_item_point"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/split_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            android:textColor="#aaaeb2"
+            android:text="满分1.5"
+            />
+
+</RelativeLayout>

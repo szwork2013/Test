@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/view_course_course_card_desc_height">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:text="Hadoop实战演练"
+            android:textSize="@dimen/view_course_huge_text_size"
+            android:textColor="@android:color/white"
+            android:id="@+id/courseTitleTextView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#999999"
+            android:maxLines="4"
+            android:textSize="@dimen/view_course_medium_text_size"
+            android:ellipsize="end"
+            android:text="安迪·杰希领导着亚马逊网络服务业务以及亚马逊网站的基础设施团队。AWS是亚马逊网的子公司，它为软件开发者和企业客户提供高性价比、可信赖、富有弹性、全方位及灵活的基于云的基础设施服务。"
+            android:id="@+id/courseIntroTextView"/>
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+    </View>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="@dimen/view_course_play_button_width"
+                android:layout_height="@dimen/view_course_play_button_height"
+                android:src="@drawable/continue_play_selector"
+                android:id="@+id/playButton"
+                android:nextFocusLeft="@null"
+                android:nextFocusRight="@+id/favorButton"
+                android:padding="30dp"
+                />
+        <View
+                android:layout_width="1dp"
+                android:layout_height="0dip"
+                android:layout_weight="1">
+        </View>
+
+        <Button
+                android:padding="30dp"
+                android:layout_width="@dimen/view_course_collect_button_width"
+                android:layout_height="@dimen/view_course_collect_button_height"
+                android:layout_gravity="right"
+                android:src="@drawable/collect_selector"
+                android:id="@+id/favorButton"
+                android:nextFocusLeft="@+id/playButton"
+                android:nextFocusRight="@+id/listView"
+                android:nextFocusDown="@+id/courseRecommandGridView"
+                />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+
+        <ImageView
+
+                android:layout_width="@dimen/view_course_watch_to_where_image_width"
+                android:layout_height="@dimen/view_course_watch_to_where_image_width"
+                android:src="@drawable/icon_time"
+                android:id="@+id/imageView"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/view_course_normal_text_size"
+                android:text="上次观看到第01讲-导学内容 02:23"
+                android:id="@+id/playProgressTextView"/>
+
+    </LinearLayout>
+
+</LinearLayout>

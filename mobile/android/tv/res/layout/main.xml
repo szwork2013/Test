@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/main_background"
+              android:paddingBottom="0dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="@dimen/main_image_width"
+                android:layout_height="@dimen/main_image_height"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:focusable="false"
+                android:src="@drawable/logo_new"/>
+
+        <Button
+                android:id="@+id/tv_tab_main"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="@dimen/main_button_height"
+                android:gravity="center"
+                android:text="首页"
+                android:textStyle="bold"
+                android:textColor="@color/tab_color_focused"
+                android:background="@null"
+                android:textSize="@dimen/main_button_text_size"
+                android:paddingLeft="16dp"
+                android:layout_marginLeft="50dp"
+                android:nextFocusLeft="@null"
+                android:nextFocusRight="@+id/tv_tab_favor"/>
+
+        <Button
+                android:id="@+id/tv_tab_favor"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="@dimen/main_button_height"
+                android:gravity="center"
+                android:text="收藏"
+                android:textStyle="bold"
+                android:background="@null"
+                android:textColor="#757575"
+                android:textSize="@dimen/main_button_text_size"
+                android:nextFocusLeft="@id/tv_tab_main"
+                android:nextFocusRight="@+id/tv_tab_history"/>
+
+        <Button
+                android:id="@+id/tv_tab_history"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="@dimen/main_button_height"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="播放记录"
+                android:layout_marginLeft="@dimen/main_play_margin"
+                android:layout_marginRight="@dimen/main_play_margin"
+                android:background="@null"
+                android:textColor="#757575"
+                android:textSize="@dimen/main_button_text_size"
+                android:nextFocusLeft="@id/tv_tab_favor"
+                android:nextFocusRight="@+id/tv_tab_more"/>
+
+        <Button
+                android:id="@+id/tv_tab_more"
+                android:layout_width="@dimen/main_button_width"
+                android:layout_height="@dimen/main_button_height"
+                android:gravity="center"
+                android:text="更多"
+                android:textStyle="bold"
+                android:background="@null"
+                android:textColor="#757575"
+                android:textSize="@dimen/main_button_text_size"
+                android:nextFocusLeft="@id/tv_tab_history"
+                android:nextFocusRight="@null"/>
+    </LinearLayout>
+
+    <com.kaikeba.common.widget.MyViewPager
+            android:id="@+id/vPager_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kaikeba.common.widget.AllCoursesGridView xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:id="@+id/course_download_gridview"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginBottom="30dp"
+                                              android:layout_marginTop="4dp"
+                                              android:columnWidth="226dp"
+                                              android:gravity="center"
+                                              android:horizontalSpacing="10dp"
+                                              android:numColumns="auto_fit"
+                                              android:paddingLeft="11dp"
+                                              android:paddingRight="11dp"
+                                              android:stretchMode="columnWidth"
+                                              android:verticalSpacing="20dp">
+
+</com.kaikeba.common.widget.AllCoursesGridView>

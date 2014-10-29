@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+
+    <View
+            android:id="@+id/v1"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+            android:id="@+id/rv_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:visibility="gone"
+            >
+        <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/icon_morereplys"/>
+
+        <TextView
+                android:id="@+id/tv_reply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_toRightOf="@id/iv_more"
+                android:text="共6条回复"
+                android:layout_centerVertical="true"
+                android:textColor="#aaaeb2"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_load_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_reply_count"
+                android:layout_marginLeft="20dp"
+                android:text="全部展开"
+                android:layout_centerVertical="true"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:paddingBottom="12dp"
+            >
+
+        <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="9dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/avatar_default"/>
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:text="小明"
+                android:textColor="#297acc"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/message"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:text="情同学们查看新的作业要求，写错了要悲剧"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/posted_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="2013年7月5日"
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/unit_bg"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+    <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="13dp"
+            android:paddingLeft="18dp"
+            android:text="222222222"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/btn_query_course"
+            android:textColor="#a70000"/>
+
+    <ImageView
+            android:id="@+id/course_state"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_finished"
+            android:layout_toRightOf="@id/course_name"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            >
+        <ImageView
+                android:id="@+id/course_fold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/moduleItemIndictor"
+                />
+
+    </LinearLayout>
+
+</RelativeLayout>

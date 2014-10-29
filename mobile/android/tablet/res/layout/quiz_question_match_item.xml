@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/tv_quiz_question_match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="同样的道理，情感化的设计不是为了盲目的去满足用户的情感"
+            android:textColor="@color/shadow_black"
+            android:textSize="15sp"
+            />
+
+    <Spinner
+            android:id="@+id/sp_quiz_question_match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+//
+// Prefix header for all source files of the 'learn' target in the 'learn' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+//引入宏
+#import "GlobalCategoryHeader.h"
+
+//iPhone用到的全局定义
+#import "KKBiPhoneGlobalHeader.h"
+
+//第三方库全局头
+#import "GlobalVendorHeader.h"
+
+
+#endif
+
+
+
+#define NTP_Logging(fmt, ...)
+#define LogInProduction(fmt, ...) \
+NSLog((@"%@|" fmt), [NSString stringWithFormat: @"%24s", \
+[[[self class] description] UTF8String]], ##__VA_ARGS__)

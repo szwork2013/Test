@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/course_bg_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/activity_header"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                ptr:ptrAnimationStyle="rotate"
+                android:id="@+id/lv_my_open_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:divider="@drawable/course_item_divider"
+                android:scrollbars="none"
+                />
+        <include layout="@layout/activity_no_courses"/>
+        <include layout="@layout/loading_fial_layout"/>
+        <include layout="@layout/loading_layout"/>
+    </RelativeLayout>
+
+</LinearLayout>

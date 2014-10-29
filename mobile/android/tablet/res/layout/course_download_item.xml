@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_bg">
+
+    <TextView
+            android:id="@+id/tv_download_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#3d454c"
+            android:textSize="18sp"/>
+
+    <Button
+            android:id="@+id/tv_all_delete"
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/all_delete"
+            android:textColor="#e84134"
+            android:background="@drawable/button_deleteall_normal"
+            android:textSize="15sp"/>
+
+    <com.kaikeba.common.widget.AllCoursesGridView
+            android:id="@+id/course_download_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_download_coursename"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:columnWidth="176dp"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp">
+    </com.kaikeba.common.widget.AllCoursesGridView>
+
+</RelativeLayout>

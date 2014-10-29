@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <ImageView
+            android:id="@+id/iphone"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:layout_marginRight="@dimen/public_apk_image_view_small_margin_horizon"
+            android:layout_toLeftOf="@+id/android_phone"
+            android:src="@drawable/ios_selector"
+            android:scaleType="fitXY"
+            android:nextFocusLeft="@+id/ll_left"
+            android:nextFocusRight="@+id/android_phone"/>
+
+    <ImageView
+            android:id="@+id/android_phone"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:src="@drawable/android_phone_selector"
+            android:background="@drawable/button_android_phone_normal"
+            android:layout_centerHorizontal="true"
+            android:nextFocusLeft="@+id/iphone"
+            android:nextFocusRight="@+id/android_pad"
+            android:scaleType="fitXY"/>
+
+    <ImageView
+            android:id="@+id/android_pad"
+            android:layout_width="@dimen/public_apk_image_view_small_width"
+            android:layout_height="@dimen/public_apk_image_view_small_height"
+            android:layout_marginTop="@dimen/public_apk_image_view_small_margin_top"
+            android:layout_marginLeft="@dimen/public_apk_image_view_small_margin_horizon"
+            android:layout_toRightOf="@+id/android_phone"
+            android:background="@drawable/button_android_pad_normal"
+            android:nextFocusLeft="@+id/android_phone"
+            android:nextFocusRight="@null"
+            android:scaleType="fitXY"/>
+
+    <ImageView
+            android:id="@+id/iv_android_phone"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_below="@id/android_phone"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:src="@drawable/qrcode_android_phone"
+            android:layout_centerHorizontal="true"
+            />
+
+    <ImageView
+            android:id="@+id/iv_iphone"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_marginRight="@dimen/public_apk_image_view_big_margin_horizon"
+            android:layout_below="@id/android_phone"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:layout_toLeftOf="@id/iv_android_phone"
+            android:src="@drawable/qrcode_ios"
+            />
+
+    <ImageView
+            android:id="@+id/iv_android_pad"
+            android:layout_width="@dimen/public_apk_image_view_big_width"
+            android:layout_height="@dimen/public_apk_image_view_big_height"
+            android:layout_marginLeft="@dimen/public_apk_image_view_big_margin_horizon"
+            android:layout_below="@id/android_phone"
+            android:layout_toRightOf="@id/iv_android_phone"
+            android:layout_marginTop="@dimen/public_apk_image_view_big_margin_top"
+            android:src="@drawable/qrcode_android_tablet"
+            />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone&amp;iPad"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iphone"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/iphone"
+            android:layout_alignRight="@+id/iphone"
+            android:layout_alignStart="@+id/iphone"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android手机"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/android_phone"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/android_phone"
+            android:layout_alignRight="@+id/android_phone"
+            android:layout_alignStart="@+id/android_phone"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android平板"
+            android:textSize="@dimen/tab_more_icon_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/android_pad"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/android_pad"
+            android:layout_alignRight="@+id/android_pad"
+            android:layout_alignStart="@+id/android_pad"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n下载客户端"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_iphone"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_iphone"
+            android:layout_alignRight="@+id/iv_iphone"
+            android:layout_alignStart="@+id/iv_iphone"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n下载客户端"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_android_phone"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_android_phone"
+            android:layout_alignRight="@+id/iv_android_phone"
+            android:layout_alignStart="@+id/iv_android_phone"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码\n下载客户端"
+            android:textSize="@dimen/tab_more_qrcode_below_text_size"
+            android:textColor="@color/more_tag_font_color"
+            android:layout_below="@+id/iv_android_pad"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/iv_android_pad"
+            android:layout_alignRight="@+id/iv_android_pad"
+            android:layout_alignStart="@+id/iv_android_pad" android:id="@+id/textView"/>
+
+</RelativeLayout>

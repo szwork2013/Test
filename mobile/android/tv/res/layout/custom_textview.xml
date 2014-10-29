@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/custom_textview_font_size"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:paddingTop="@dimen/custom_textview_padding"
+        android:paddingBottom="@dimen/custom_textview_padding"
+        android:paddingRight="@dimen/custom_textview_padding"
+        android:paddingLeft="@dimen/custom_textview_padding_left">
+</Button>

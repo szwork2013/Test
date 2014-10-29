@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.kaikeba.common.widget.XDScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp">
+
+                <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/scollerimg_default2"/>
+
+                <LinearLayout
+                        android:id="@+id/gallery_point_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/promo_info"
+                        android:layout_width="240dp"
+                        android:layout_height="210dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:background="#e6e6e6"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp">
+
+                    <TextView
+                            android:id="@+id/pro_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="18dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#14171a"
+                            android:textIsSelectable="false"
+                            android:textSize="24sp"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c2c6cc"/>
+
+                    <TextView
+                            android:id="@+id/pro_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:lines="4"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:textColor="#616366"
+                            android:textIsSelectable="false"
+                            android:textSize="15sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/all_course_type_bar"/>
+
+            <com.kaikeba.common.widget.AllCoursesGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="4dp"
+                    android:columnWidth="226dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="auto_fit"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20dp"/>
+        </LinearLayout>
+    </com.kaikeba.common.widget.XDScrollView>
+
+    <RelativeLayout
+            android:id="@+id/rv_out"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/bg_nav"
+            android:visibility="invisible">
+
+        <TextView
+                android:id="@+id/tv_guide"
+                android:layout_width="112dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/activity_assigment"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/guide_course"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_open"
+                android:layout_width="112dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/tv_guide"
+                android:background="@drawable/activity_discuss"
+                android:gravity="center"
+                android:text="@string/open_course"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+        <TextView
+                android:id="@+id/tv_all_course"
+                android:layout_width="112dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/tv_guide"
+                android:background="@drawable/activity_announcement"
+                android:gravity="center"
+                android:text="@string/all_courses"
+                android:textColor="@color/activity_top_text_normal"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/course_type_bg"
+                android:drawableRight="@drawable/icon_pulldown"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/course_type_check"
+                android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <ImageButton
+            android:id="@+id/btn_togo"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:background="@drawable/all_course_menu"/>
+
+</RelativeLayout>

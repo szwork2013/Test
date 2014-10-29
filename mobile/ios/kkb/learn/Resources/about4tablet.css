@@ -1,0 +1,67 @@
+body {
+ margin: 0px;
+}
+
+#head {
+	height: 420px;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4b5154), color-stop(100%, #26292b));
+}
+
+#blackboard {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 55px;
+	background-image:url(blackboardwithlogo2.jpg);
+	width:358px;
+	height:286px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px 0px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px 0px;
+}
+
+#title {
+	text-align:center;
+	font-family:微软雅黑, Arial, 宋体;
+	font-weight:lighter;
+	position:relative;
+	top:40px;
+	font-size:30px;
+	color:#FFF;
+	line-height:25px;
+}
+
+#line {
+	margin-left: 45px;
+	margin-right: 45px;
+	color:#AEB1B3;
+	font-family:"kai";
+	font-weight:lighter;
+	position:relative;
+	top:155px;
+	font-size:13px;
+	line-height:20px;
+}
+
+#linea {
+	margin-bottom: 2px;
+}
+
+#lineb {
+	text-align:right;
+	margin-top: 2px;
+}
+
+#content {
+	background-image:url(debut_light.png);
+	background-repeat: repeat;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family:微软雅黑, Arial, 宋体;
+}
+
+#content p {
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	line-height: 25px;
+}

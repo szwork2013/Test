@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/kaikebaUtils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-volley-master.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/open_sdk_r3922_lite.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mta-sdk-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

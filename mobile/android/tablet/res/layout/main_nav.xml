@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main_nav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#242424"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/layout_main_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/black">
+
+        <ImageView
+                android:id="@+id/imgBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_kaikeba"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout_main_splitbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_main_actionbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+        <ImageView
+                android:id="@+id/imgUserAvatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cover_avatardefault"
+                android:contentDescription="@string/signin_signup"
+                android:src="@drawable/sidebar_avatar_mask"/>
+
+        <TextView
+                android:id="@+id/txtUserName"
+                style="@style/mainNavTextGrayShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUserAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/signin_signup"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+            android:id="@+id/rg_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_main_splitbar"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/main_nav_allcourse"
+                style="@style/style_main_nav"
+                android:checked="true"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/main_tab_allcourse"
+                android:text="@string/all_courses"
+                android:textColor="@drawable/module_tab_text_selector"/>
+
+        <RadioButton
+                android:id="@+id/main_nav_mycourse"
+                style="@style/style_main_nav"
+                android:drawableTop="@drawable/main_tab_mycourse"
+                android:text="@string/my_courses"
+                android:textColor="@drawable/module_tab_text_selector"
+                android:visibility="invisible"/>
+
+        <RadioButton
+                android:id="@+id/main_nav_active"
+                style="@style/style_main_nav"
+                android:drawableTop="@drawable/main_tab_activity"
+                android:text="@string/activity"
+                android:textColor="@drawable/module_tab_text_selector"
+                android:visibility="invisible"/>
+
+        <RadioButton
+                android:id="@+id/main_nav_download"
+                style="@style/style_main_nav"
+                android:drawableTop="@drawable/main_tab_download"
+                android:text="@string/download"
+                android:textColor="@drawable/module_tab_text_selector"
+                android:visibility="invisible"/>
+
+    </RadioGroup>
+
+    <ImageButton
+            android:id="@+id/btn_main_setting"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_main_setting"/>
+
+</RelativeLayout>

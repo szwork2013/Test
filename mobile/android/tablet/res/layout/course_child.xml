@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f0f0f0"
+              android:padding="10dp"
+        >
+
+    <ImageView
+            android:id="@+id/course_ImView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_coursepage">
+    </ImageView>
+
+    <TextView
+            android:id="@+id/courseSpec"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="@string/course_module"
+            android:layout_toRightOf="@id/course_ImView"
+            android:textColor="#666666"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/course_ImView"
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="#666666"/>
+
+    <TextView
+            android:id="@+id/course_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:text="10分"
+            android:visibility="gone"
+            android:textColor="#666666"/>
+
+</LinearLayout>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kaikeba.phone"
+          android:versionCode="703"
+          android:versionName="v3.2.0">
+
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 推送所需新加权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="getui.permission.GetuiService"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 人人分享权限 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <!--自定义权限-->
+    <permission
+            android:name="getui.permission.GetuiService"
+            android:protectionLevel="normal">
+    </permission>
+
+    <!-- zxing-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+
+    <!-- iflyek -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true"
+            android:anyDensity="true">
+    </supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <application
+            android:name="com.kaikeba.ContextUtil"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/ToggleStyle"
+            >
+        <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="52649e6f56240b87ba167396"/>
+        <meta-data
+                android:name="UMENG_CHANNEL"
+                android:value="dev"/>
+        <activity
+                android:name="com.kaikeba.activity.LoadingActivity"
+                android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.kaikeba.activity.CourseSquareActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.kaikeba.activity.RegistActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.LoginActivity2"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.FindPasswordActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.CourseInfomationActivity"
+                android:launchMode="singleTask"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.kaikeba.activity.SettingActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+
+        <activity
+                android:name="com.kaikeba.activity.UpdateUserInfoActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.kaikeba.activity.PaymentActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.kaikeba.activity.UnitActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.kaikeba.activity.UnitPageActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:hardwareAccelerated="true"
+                android:screenOrientation="landscape"/>
+        <activity
+                android:name="com.kaikeba.activity.VideoPlayActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:hardwareAccelerated="true"
+                android:screenOrientation="landscape"/>
+        <!-- UMeng -->
+        <activity android:name="com.umeng.fb.ConversationActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.umeng.fb.ContactActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.CourseHomeActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                >
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.AllCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask"
+                >
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.LeadViewActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Light.NoTitleBar"
+                android:noHistory="true"
+                >
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.CategoryActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                >
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.SearchActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:windowSoftInputMode="adjustPan"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.MicroCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.TabCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                >
+        </activity>
+        <activity android:name="com.kaikeba.activity.PersonalHomePageActivity"
+                  android:configChanges="screenSize|orientation|keyboardHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.DynamicActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.UserCenterActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.MyMicroActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                />
+        <activity
+                android:name="com.kaikeba.activity.MyOpenCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.MyGuideCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.MyCollectCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.DownLoadMangerActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.OpenCourseActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.GuideCourseLearnActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.ZoomImageActivity"
+                android:noHistory="true"
+                android:theme="@style/Theme.ActivityAniZoomOut">
+        </activity>
+        <activity
+                android:name="com.kaikeba.activity.GuideCourseAcitvity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.AlipayActivity"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.kaikeba.activity.MyCertificate"
+                android:configChanges="screenSize|orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                />
+        <activity
+                android:name="com.alipay.android.app.sdk.WapPayActivity"
+                android:screenOrientation="portrait" >
+        </activity>
+        <!--         <activity -->
+        <!--             android:name="com.umeng.fb.ui.SendFeedback" -->
+        <!--             android:theme="@style/UMengDialog" -->
+        <!--             android:windowSoftInputMode="adjustResize" /> -->
+        <!--         <activity -->
+        <!--             android:name="com.umeng.fb.ui.FeedbackConversations" -->
+        <!--             android:theme="@style/UMengDialog" /> -->
+        <!--         <activity -->
+        <!--             android:name="com.umeng.fb.ui.FeedbackConversation" -->
+        <!--             android:configChanges="keyboard" -->
+        <!--             android:theme="@style/UMengDialog" /> -->
+        <receiver
+                android:name="com.kaikeba.PushTouChuanReceiver"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.cwxu7yXUvV8MpziUtwEJO9"/>
+            </intent-filter>
+        </receiver>
+        <!--个推SDK配置开始-->
+        <!--置的第三方参数属性-->
+        <meta-data
+                android:name="PUSH_APPKEY"
+                android:value="2hl44VU7I484GNtPBfxs63"/>
+        <meta-data
+                android:name="PUSH_APPID"
+                android:value="cwxu7yXUvV8MpziUtwEJO9"/>
+        <meta-data
+                android:name="PUSH_APPSECRET"
+                android:value="uW00uaPjaA8voPYtDL9bV8"/>
+        <meta-data
+                android:name="PUSH_GROUPID"
+                android:value=""/>
+        <!--配置SDK核心服务-->
+        <service
+                android:name="com.igexin.sdk.PushService"
+                android:exported="true"
+                android:label="NotificationCenter"
+                android:process=":pushservice">
+        </service>
+
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+        <activity
+                android:name="com.igexin.sdk.PushActivity"
+                android:excludeFromRecents="true"
+                android:exported="false"
+                android:process=":pushservice"
+                android:taskAffinity="com.igexin.sdk.PushActivityTask"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <!--配置弹框activity-->
+        <activity android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+                  android:configChanges="orientation|keyboard|keyboardHidden"
+                  android:excludeFromRecents="true"
+                  android:process=":pushservice"
+                  android:taskAffinity="android.task.myServicetask"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:exported="false"/>
+        <receiver android:name="com.igexin.getuiext.service.PayloadReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <!--这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改-->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <!--android:name="com.igexin.sdk.action.第三方的appId"-->
+                <action android:name="com.igexin.sdk.action.cwxu7yXUvV8MpziUtwEJO9"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.igexin.getuiext.service.GetuiExtService"
+                 android:process=":pushservice"/>
+        <!--个推download模块配置-->
+        <service android:name="com.igexin.download.DownloadService"
+                 android:process=":pushservice"/>
+        <receiver
+                android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider
+                android:name="com.igexin.download.DownloadProvider"
+                android:process=":pushservice"
+                android:authorities="downloads.com.kaikeba.phone"/>
+
+        <!--android:authorities="downloads.第三方包名"-->
+        <!--===========================================================================-->
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+                android:name="com.umeng.socialize.view.ShareActivity"
+                android:configChanges="orientation|keyboard"
+                android:launchMode="singleTask"
+                android:noHistory="true"
+                android:theme="@style/Theme.UMDialog"
+                android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- tencent100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID
+                <data android:scheme="tencent801523340" />
+                <100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent1101226009"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:screenOrientation="portrait">
+        </activity>
+        <!-- ###################添加UmengAppkey###################### -->
+        <activity
+                android:name="com.kaikeba.phone.wxapi.WXEntryActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"/>
+        <activity android:name="com.renn.rennsdk.oauth.OAuthActivity"
+                  android:configChanges="orientation|navigation|keyboardHidden"/>
+        <!--  kaikeba  3.0 -->
+        <activity android:name="com.kaikeba.activity.CategoryCourseActivity"
+                  android:configChanges="screenSize|orientation|keyboardHidden"
+                  android:screenOrientation="portrait"
+                />
+
+        <!-- zxing   -->
+        <activity
+                android:name="com.android.CaptureActivity"
+                android:clearTaskOnLaunch="true"
+                android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:stateNotNeeded="true"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="zxing.appspot.com"
+                        android:path="/scan"
+                        android:scheme="http"/>
+            </intent-filter>
+            <!-- We also support a Google Product Search URL. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="www.google.com"
+                        android:path="/m/products/scan"
+                        android:scheme="http"/>
+            </intent-filter>
+            <!-- And the UK version. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="www.google.co.uk"
+                        android:path="/m/products/scan"
+                        android:scheme="http"/>
+            </intent-filter>
+            <!-- Support zxing://scan/?... like iPhone app -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="scan"
+                        android:path="/"
+                        android:scheme="zxing"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.PreferencesActivity"
+                android:label="@string/preferences_name"
+                android:stateNotNeeded="true">
+        </activity>
+        <activity
+                android:name="com.android.encode.EncodeActivity"
+                android:label="@string/share_name"
+                android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <!-- This allows us to handle the Share button in Contacts. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <!-- This allows us to handle sharing any plain text . -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.book.SearchBookContentsActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/sbc_name"
+                android:screenOrientation="landscape"
+                android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.share.ShareActivity"
+                android:label="@string/share_name"
+                android:screenOrientation="user"
+                android:stateNotNeeded="true"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.history.HistoryActivity"
+                android:label="@string/history_title"
+                android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.share.BookmarkPickerActivity"
+                android:label="@string/bookmark_picker_name"
+                android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.share.AppPickerActivity"
+                android:configChanges="orientation"
+                android:label="@string/app_picker_name"
+                android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.android.HelpActivity"
+                android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

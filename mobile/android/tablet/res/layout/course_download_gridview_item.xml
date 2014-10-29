@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:paddingTop="9dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp">
+
+        <ImageView
+                android:id="@+id/gridCourseBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="80"
+                android:scaleType="centerCrop"/>
+
+        <ImageView
+                android:id="@+id/iv_startOrPause"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/button_download_normal_module"
+                android:scaleType="center"/>
+
+        <ProgressBar
+                android:id="@+id/download_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/download_progress"
+                />
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/button_delete"
+            android:scaleType="center"/>
+
+    <RelativeLayout
+            android:id="@+id/rv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:background="@color/white">
+
+        <TextView
+                android:id="@+id/tv_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:textColor="@color/download_loading"
+                android:textIsSelectable="false"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_video_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_video_name"
+                android:layout_margin="9dp"
+                android:textColor="@color/download_loading"
+                android:textIsSelectable="false"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_loadstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_video_name"
+                android:layout_margin="10dp"
+                android:textColor="@color/download_loading"
+                android:textIsSelectable="false"
+                android:textSize="14sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

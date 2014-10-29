@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:focusable="false"
+              android:padding="8dp">
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_unit"
+            android:id="@+id/imageView"/>
+    <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/icon_unit"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:text="第一讲:Hadoop生态系统及版本演化以及介绍和部署"
+            android:textColor="#999999"/>
+
+</LinearLayout>

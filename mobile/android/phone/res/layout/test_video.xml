@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal|center_vertical"
+        >
+    <LinearLayout
+            android:id="@+id/ll_view"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    </LinearLayout>
+    <!--<com.kaikeba.common.widget.VideoPlayerView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/rl_video_player"-->
+    <!--/>-->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="sakljddddddddddddddddddddd
+                asd
+                asd
+                as
+                d
+                asd
+                asd
+                as
+                da
+                sd
+                asd
+                asd
+                a
+                sd
+                asd
+                a
+                sd
+                asd
+                a
+                sd
+                asd"
+              android:textSize="30sp"/>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <include layout="@layout/activity_header"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="23dp"
+            android:layout_height="280dp">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="265dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29.6dp"
+                    android:layout_marginBottom="29.6dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/certificate_default"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_certificate"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_certificate"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/arrow_l"
+                       android:layout_alignParentLeft="true"
+                       android:layout_marginLeft="16dp"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/iv_arrow_l"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/arrow_r"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="16dp"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/iv_arrow_r"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="43dp"
+                        android:id="@+id/rl_score">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/bg_score"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="36.3dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/blue"
+                          android:textSize="34sp"
+                          android:textStyle="bold"
+                          android:text="90"
+                          android:id="@+id/tv_score"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/blue"
+                          android:textSize="34sp"
+                          android:textStyle="bold"
+                          android:text="%"/>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/gray"
+                      android:layout_marginTop="85dp"
+                      android:textSize="14sp"
+                      android:layout_centerHorizontal="true"
+                      android:text="分数"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="38.5dp"
+                  android:orientation="vertical"
+                  android:id="@+id/ll_name">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="38.5dp"
+                  android:layout_marginRight="38.5dp"
+                  android:textSize="21sp"
+                  android:textColor="@color/yellow"
+                  android:maxLines="2"
+                  android:text="Objective-C面向对象程序设计面向对象程序设计"
+                  android:id="@+id/tv_name"
+                  android:gravity="center_horizontal"
+                />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:layout_marginTop="16dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/gray"
+                      android:textSize="14sp"
+                      android:text="2014.10.17"
+                      android:id="@+id/tv_date"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/gray"
+                      android:layout_marginLeft="5dp"
+                      android:textSize="14sp"
+                      android:text="获得"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="32dp">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/rl_progress_bg">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/progress_bar_gray"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:id="@+id/ll_progress">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/progress_bar_blue"
+                           android:id="@+id/iv_progress_bar"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center_horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="@color/gray"
+                              android:textSize="14sp"
+                              android:text="3"
+                              android:id="@+id/tv_cur_position"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="@color/gray"
+                              android:textSize="14sp"
+                              android:text="/"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="@color/gray"
+                              android:textSize="14sp"
+                              android:text="6"
+                              android:id="@+id/tv_total_position"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

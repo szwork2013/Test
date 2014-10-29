@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingTop="10dp"
+        >
+
+    <ImageView
+            android:id="@+id/gridCourseBg"
+            android:layout_width="226dp"
+            android:layout_height="150dp"
+            android:background="@drawable/course_default"
+            android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:background="@color/white">
+
+        <TextView
+                android:id="@+id/courseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:maxLines="2"
+                android:text="互联网营销"
+                android:layout_toLeftOf="@+id/courseIsIn"
+                android:textColor="#14171a"
+                android:textSize="@dimen/my_course_name"
+                />
+
+        <TextView
+                android:id="@+id/courseIsIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:text="进入课程"
+                android:textColor="#2fa1db"
+                android:textSize="18sp"
+                />
+
+        <TextView
+                android:id="@+id/courseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/courseName"
+                android:layout_marginTop="5dp"
+                android:text="公开课"
+                android:textColor="#67747c"
+                android:textSize="14sp"
+                />
+
+
+        <TextView
+                android:id="@+id/colledgeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/courseType"
+                android:text="北京航空航天大学"
+                android:textColor="#67747c"
+                android:textSize="14sp"
+                />
+
+        <TextView
+                android:id="@+id/tv_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colledgeName"
+                android:layout_marginTop="5dp"
+                android:text="开课时间："
+                android:textColor="#67747c"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colledgeName"
+                android:layout_toRightOf="@id/tv_startTime"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="报名结束"
+                android:textColor="#67747c"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_startTime"
+                android:layout_marginTop="5dp"
+                android:text="结束时间："
+                android:textColor="#67747c"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_startTime"
+                android:layout_toRightOf="@id/tv_endTime"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="结束时间："
+                android:textColor="#67747c"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/endTime"
+                android:text="%"
+                android:textColor="#2fa1db"
+                android:textSize="14sp"
+                />
+
+        <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_percent"
+                android:text="48"
+                android:layout_alignBaseline="@id/endTime"
+                android:textColor="#2fa1db"
+                android:textSize="20sp"
+                />
+
+        <TextView
+                android:id="@+id/iv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:textIsSelectable="false"
+                />
+
+    </RelativeLayout>
+
+</LinearLayout>

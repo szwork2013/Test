@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.example.myapp.test2.CollapsibleTextView
+            android:id="@+id/collapsible_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/learning_course_discuss_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="还有5个小时"
+            android:textSize="14dp"
+            android:layout_toLeftOf="@+id/task_done"
+            android:layout_centerVertical="true"
+            android:textColor="#ff7f00"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_bright"
+            />
+
+
+
+</LinearLayout>

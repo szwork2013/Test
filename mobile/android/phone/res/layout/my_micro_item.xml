@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent"
+          android:layout_height="14dp"
+          android:background="@color/course_bg_color"/>
+
+    <RelativeLayout
+            android:id="@+id/ll_tv_my_micro"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:background="@drawable/mic_pro_title_bg"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            >
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/tv_my_micro_name"
+                  android:textColor="@color/white"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  android:textSize="21sp"
+                  android:textStyle="bold"
+                  android:text="Web开发工程师"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/tv_my_micro_rate"
+                  android:textColor="@color/white"
+                  android:text="0/4"/>
+    </RelativeLayout>
+
+    <com.kaikeba.common.widget.MyListVIew
+            android:id="@+id/lv_my_micro_courses"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:cacheColorHint="@color/course_bg_color"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:layout_marginLeft="14dp"
+          android:layout_marginRight="14dp"
+          android:background="#d3d7dc"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+        <ImageView
+                android:id="@+id/iv_final_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mic_pro_button_uncheck"/>
+        <TextView
+                android:layout_toRightOf="@id/iv_final_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_willbegin"
+                android:textSize="19sp"
+                android:text="最终考核"/>
+        <ImageView
+                android:id="@+id/iv_final_check_status"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mic_pro_button_wait"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

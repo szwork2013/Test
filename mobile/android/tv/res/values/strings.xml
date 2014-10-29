@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">开课吧</string>
+    <string name="public_number">点击右键, 关注开课吧公众账号, 随时了解最新动态</string>
+    <string name="public_apk">点击右键，选择设备类型，扫描二维码，下载开课吧客户端.</string>
+</resources>

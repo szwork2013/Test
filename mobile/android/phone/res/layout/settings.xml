@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/course_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_header"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_setting_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:background="@drawable/settings_bg"
+                        android:text="@string/profile"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="14dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                              android:gravity="center_vertical"
+                              >
+
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center_vertical"
+                              android:textSize="19sp"
+                              android:paddingLeft="19dp"
+                              android:textColor="#5c5c66"
+                              android:background="@drawable/settings_bg"
+                              android:text="@string/down_load_nowifi"/>
+
+                    <com.kaikeba.common.widget.SwitchButton
+                            android:id="@+id/download_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                              android:gravity="center_vertical"
+                              android:visibility="gone"
+                            >
+
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center_vertical"
+                              android:background="@drawable/settings_bg"
+                              android:textSize="19sp"
+                              android:paddingLeft="19dp"
+                              android:textColor="#5c5c66"
+                              android:text="@string/push_message"/>
+
+                    <com.kaikeba.common.widget.SwitchButton
+                            android:id="@+id/message_push_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_setting_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/check_latest"
+                        android:background="@drawable/settings_bg"
+                        android:textSize="19sp"
+                        android:textColor="#5c5c66"
+                        android:paddingLeft="19dp"
+                        />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <TextView
+                        android:id="@+id/tv_setting_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:gravity="center_vertical"
+                        android:text="@string/feedback"
+                        android:background="@drawable/settings_bg"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <TextView
+                        android:id="@+id/tv_setting_stat_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:text="@string/star_me"
+                        android:background="@drawable/settings_bg"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <TextView
+                        android:id="@+id/tv_setting_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:text="@string/about_me"
+                        android:background="@drawable/settings_bg"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <TextView
+                        android:id="@+id/tv_my_certificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:text="我的证书"
+                        android:background="@drawable/settings_bg"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/all_course_tab_bg_press"/>
+
+                <TextView
+                        android:id="@+id/tv_zhifu_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:paddingLeft="19dp"
+                        android:textColor="#5c5c66"
+                        android:text="支付宝支付"
+                        android:visibility="gone"
+                        android:background="@drawable/settings_bg"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_setting_zhuxiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="@string/zhuxiao"
+                        android:background="@drawable/settings_bg"
+                        android:textSize="19sp"
+                        android:textColor="#f75756"/>
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="当前版本：  v3.0.3"
+                    android:visibility="visible"
+                    android:textColor="@color/txt_setting_unavailable"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

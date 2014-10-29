@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+        >
+
+    <include layout="@layout/loading_layout"/>
+
+    <include layout="@layout/loading_fial_layout"/>
+
+    <RelativeLayout
+            android:id="@+id/ll_no_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_empty"
+                android:scaleType="centerCrop"
+                />
+
+        <TextView
+                android:id="@+id/tv_more_course"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="更多精彩课程"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/complete_update_bg"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+    </RelativeLayout>
+
+    <com.kaikeba.common.widget.LoadMoreListView
+            android:id="@+id/lv_all_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"/>
+
+</LinearLayout>

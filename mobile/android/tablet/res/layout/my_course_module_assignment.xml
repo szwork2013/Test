@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e6e6e6"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/assignment"
+            android:textColor="@color/course_type_check"
+            android:textSize="18sp"
+            android:background="@drawable/bg_nav_unit"/>
+
+    <include
+            layout="@layout/loading_layout"
+            />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/ll_assignment_future"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_assignment_future_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="即将到来的作业"
+                        android:textColor="#fe5d5d"
+                        android:textSize="20sp"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_assignment_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_assignment_before_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="以前的作业"
+                        android:textColor="#3d454c"
+                        android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

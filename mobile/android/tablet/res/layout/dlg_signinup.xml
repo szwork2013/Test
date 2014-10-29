@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="500dp"
+                android:layout_height="302dp"
+                android:background="#e6e6e6"
+        >
+
+    <ImageView
+            android:id="@+id/iv_regist_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_kaikeba"
+            android:scaleType="center"
+            android:background="@color/black"/>
+
+    <TextView
+            android:id="@+id/txtSignin"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/signin"
+            android:gravity="center"
+            android:background="@drawable/selector_setting_item_bottom"
+            android:layout_below="@id/iv_regist_logo"
+            android:textColor="#3d454c"
+            android:textSize="18sp"
+            />
+
+    <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:background="@drawable/selector_setting_item_bottom"
+            android:layout_below="@id/iv_regist_logo"
+            android:layout_toRightOf="@id/txtSignin"
+            android:text="@string/signup"
+            android:textColor="#3d454c"
+            android:textSize="18sp"
+            />
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--default for 960dp width-->
+
+    <!--main.xml-->
+    <dimen name="main_image_height">62dp</dimen>
+    <dimen name="main_image_padding_top">20dp</dimen>
+    <dimen name="main_image_padding_bottom">13dp</dimen>
+    <dimen name="main_image_margin_left">29dp</dimen>
+    <dimen name="main_button_height">62dp</dimen>
+    <dimen name="main_button_text_size">20sp</dimen>
+
+    <!--common_line.xml-->
+    <dimen name="line_width">1246dp</dimen>
+    <dimen name="line_margin_left">30dp</dimen>
+    <dimen name="line_text_size">16sp</dimen>
+
+    <!--common_item.xml-->
+    <dimen name="course_width">203dp</dimen>
+    <dimen name="course_height">143dp</dimen>
+    <dimen name="course_padding">12dp</dimen>
+    <dimen name="course_text_margin_left">10dp</dimen>
+    <dimen name="course_text_size">14sp</dimen>
+    <dimen name="course_small_text_size">12sp</dimen>
+
+    <!--course.xml-->
+    <dimen name="course_image_width">167dp</dimen>
+    <dimen name="course_image_height">102dp</dimen>
+    <dimen name="course_image_padding">10dp</dimen>
+    <dimen name="course_image_margin_top">5dp</dimen>
+    <dimen name="course_image_divider_width">3dp</dimen>
+    <dimen name="course_image_divider_margin">50dp</dimen>
+    <dimen name="course_module_name_margin_top">100dp</dimen>
+    <dimen name="course_module_name_text_size">20sp</dimen>
+    <dimen name="course_view_pager_width">390dp</dimen>
+    <dimen name="course_view_pager_margin_bottom">30dp</dimen>
+    <dimen name="course_view_pager_margin_top">20dp</dimen>
+
+    <!--tab_content_main-->
+    <dimen name="gallery_height">260dp</dimen>
+
+    <!--tab_more.xml-->
+    <dimen name="more_nav_width">250dp</dimen>
+    <dimen name="more_nav_padding_left">50dp</dimen>
+    <dimen name="button_width">180dp</dimen>
+    <dimen name="button_height">75dp</dimen>
+    <dimen name="button_padding_left">38dp</dimen>
+    <dimen name="button_margin_top">10dp</dimen>
+    <dimen name="button_text_size">19sp</dimen>
+    <dimen name="more_content_width">605dp</dimen>
+    <dimen name="more_content_height">444dp</dimen>
+    <dimen name="more_content_padding_left">50dp</dimen>
+
+    <!--custom_textview.xml-->
+    <dimen name="custom_textview_selected_font_size">18sp</dimen>
+    <dimen name="custom_textview_selected_padding">20dp</dimen>
+    <dimen name="custom_textview_font_size">16sp</dimen>
+    <dimen name="custom_textview_padding">10dp</dimen>
+    <dimen name="custom_textview_padding_left">25dp</dimen>
+
+    <!--public_apk.xml-->
+    <dimen name="public_apk_image_view_small_width">72dp</dimen>
+    <dimen name="public_apk_image_view_small_height">70dp</dimen>
+    <dimen name="public_apk_image_view_small_margin_top">28dp</dimen>
+    <dimen name="public_apk_image_view_small_margin_horizon">60dp</dimen>
+    <dimen name="public_apk_image_view_big_width">110dp</dimen>
+    <dimen name="public_apk_image_view_big_height">110dp</dimen>
+    <dimen name="public_apk_image_view_big_margin_top">27dp</dimen>
+    <dimen name="public_apk_image_view_big_margin_horizon">20dp</dimen>
+
+</resources>

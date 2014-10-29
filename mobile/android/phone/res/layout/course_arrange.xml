@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#d6d6d6">
+
+    <include layout="@layout/loading_layout"/>
+    <include layout="@layout/loading_fial_layout"/>
+    <include layout="@layout/video_player"/>
+
+    <!--     <ExpandableListView -->
+    <!-- 	    android:id="@+id/expandableCourseInfo" -->
+    <!-- 	    android:layout_width="match_parent" -->
+    <!-- 	    android:layout_height="match_parent" -->
+    <!-- 	    android:divider="#b9b9b9" -->
+    <!-- 	    android:dividerHeight="1dip" -->
+    <!-- 	    android:cacheColorHint="@android:color/transparent" -->
+    <!-- 	    android:childDivider="#ebebeb" > -->
+    <!-- 	</ExpandableListView> -->
+
+    <com.kaikeba.common.widget.XDListView
+            android:id="@+id/expandableCourseInfo"
+            android:groupIndicator="@null"
+            android:choiceMode="singleChoice"
+            android:childDivider="#cccccc"
+            android:dividerHeight="1dip"
+            android:divider="#b3b3b3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"
+            android:scrollingCache="true"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:scrollbars="none"
+            android:cacheColorHint="@android:color/transparent"/>
+
+</LinearLayout>

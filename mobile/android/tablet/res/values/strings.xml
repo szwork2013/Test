@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">开课吧HD</string>
+    <string name="all_courses">全部课程</string>
+    <string name="account">账户</string>
+    <string name="query_course">查看课程</string>
+    <string name="signin_signup">登录/注册</string>
+    <string name="activity">最近活动</string>
+
+    <!-- 下载管理 -->
+    <string name="download">下载管理</string>
+    <string name="unused_space">可用空间：</string>
+    <string name="used_space">已用：</string>
+    <string name="all_start">全部开始</string>
+    <string name="all_pause">全部暂停</string>
+    <string name="all_delete">全部删除</string>
+    <string name="download_manage">管理</string>
+    <string name="stop">Stop</string>
+    <string name="load_all_video">下载该单元全部视频</string>
+    <string name="load_video">下载视频</string>
+    <string name="load_course_all_video">下载全部视频</string>
+
+
+    <string name="signout">注销</string>
+    <string name="my_courses">我的课程</string>
+    <string name="signin">去登录</string>
+    <string name="signup">注册账号</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="username">昵称</string>
+    <string name="realname">真实姓名</string>
+    <string name="add_avatar">添加头像</string>
+    <string name="signup_compl">完成注册</string>
+    <string name="edit_profile">修改资料</string>
+    <string name="edit_avatar">修改头像</string>
+    <string name="setting">设置</string>
+    <string name="course_intro">课程简介</string>
+    <string name="instructor_intro">讲师简介</string>
+    <string name="assignment">作业</string>
+    <string name="quiz">测验</string>
+    <string name="discussion">讨论</string>
+    <string name="assigement_dss">作业通知</string>
+
+    <string name="free_trial">免费试用</string>
+    <string name="payment">立即购买</string>
+
+    <string name="course_module">单元</string>
+    <string name="course_announment">通告</string>
+    <string name="course_users">人员</string>
+
+    <!-- 设置-->
+
+    <string name="profile">个人信息</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_me">关于我们</string>
+    <string name="star_me">评价一下</string>
+    <string name="check_latest">检查更新</string>
+    <string name="version_name">版本号</string>
+
+    <string name="from_album">　相册</string>
+    <string name="from_camera">　拍照</string>
+
+    <string name="go_mycourse">您还没有自己的课程哦！去全部课程逛逛吧~~</string>
+
+    <string name="moduleItemIndictor">单元二级菜单指示图标</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="open_course">公开课</string>
+    <string name="guide_course">导学课</string>
+    <string name="back">返回</string>
+    <string name="version_number">版本号 v2.1.4</string>
+
+    <string name="tag_mycourse">我的课程</string>
+    <string name="OK">确认</string>
+    <string name="Cancle">取消</string>
+
+    <string name="course_info">基本信息</string>
+    <string name="instructor_info">课程简介</string>
+    <string name="course_arrange">课程安排</string>
+
+    <string name="course_open">open</string>
+    <string name="course_guide">guide</string>
+
+    <string name="teacher_and_ta">教师和助教</string>
+    <string name="users_student">学生</string>
+    <string name="hint_email">电子邮件</string>
+    <string name="hint_password">密码</string>
+    <string name="go_login">去登陆</string>
+    <string name="go_regist">去注册</string>
+    <string name="add_portrait">添加头像</string>
+    <string name="reply">回复</string>
+    <string name="reply_ann">回复该通告</string>
+    <string name="look_all">查看全部</string>
+    <string name="courseId">courseId</string>
+    <string name="announcement">announcement</string>
+    <string name="announcements">announcements</string>
+    <string name="value_course">course</string>
+    <string name="all_course_type">全部类型</string>
+</resources>

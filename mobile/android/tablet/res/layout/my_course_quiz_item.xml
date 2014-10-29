@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingBottom="25dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="25dp">
+
+    <TextView
+            android:id="@+id/tv_quiz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3d454c"
+            android:textSize="20sp"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_quiz_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+        <TextView
+                android:id="@+id/tv_quiz_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="到期日期:  "
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_quiz_due_date"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_quiz_due"
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_quiz_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/tv_quiz_due_date"
+                android:text="问题数量:  "
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/quiz_count"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_quiz_count"
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_quiz_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:id="@+id/tv_quiz_attempts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尝试次数:  "
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/quiz_attempts"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_quiz_attempts"
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_quiz_time_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/quiz_attempts"
+                android:text="时间限制:  "
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/quiz_time_limit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_quiz_time_limit"
+                android:textColor="#aaaeb2"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_quiz_l_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quiz_attempts"
+                android:paddingTop="25dp"
+                android:textColor="#3d454c"
+                android:textSize="14sp">
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

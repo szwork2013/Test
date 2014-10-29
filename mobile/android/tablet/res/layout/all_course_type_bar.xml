@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/type_bar"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/bg_nav">
+
+
+    <TextView
+            android:id="@+id/course_type_guide"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/activity_assigment"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/guide_course"
+            android:textColor="@color/activity_top_text_normal"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/all_course"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/activity_announcement"
+            android:layout_toLeftOf="@id/course_type_guide"
+            android:gravity="center"
+            android:text="@string/all_courses"
+            android:textColor="@color/activity_top_text_normal"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/course_type_open"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/activity_discuss"
+            android:layout_toRightOf="@id/course_type_guide"
+            android:gravity="center"
+            android:text="@string/open_course"
+            android:textColor="@color/activity_top_text_normal"
+            android:textSize="16sp"/>
+    <TextView
+            android:id="@+id/course_type_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/course_type_bg"
+            android:drawableRight="@drawable/icon_pulldown"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/course_type_check"
+            android:textSize="18sp"/>
+    <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/course_type_all"
+            android:spinnerMode="dialog"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

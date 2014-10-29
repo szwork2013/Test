@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main_nav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#242424">
+
+    <TextView
+            android:id="@+id/tv_unit_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingRight="50dp"
+            android:paddingLeft="10dp"
+            android:text="云和山的彼端-漫谈-数据中心"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_back_my_course"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_unit_course_name"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_mycourse_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="45dp"
+            android:text="返回我的课程"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_unit_course_intro"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_back_my_course"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sidebar_button_normal"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="@string/instructor_info"
+            android:textColor="#656565"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_unit_instrustor_intro"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_unit_course_intro"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/sidebar_button_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="讲师简介"
+            android:textColor="#656565"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_unit_arrange"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_unit_instrustor_intro"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/sidebar_button_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="@string/course_module"
+            android:textColor="#656565"
+            android:textSize="20sp"/>
+
+</RelativeLayout>

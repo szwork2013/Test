@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:id="@+id/surfaceView_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout
+                android:id="@+id/rv_controll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/player_bg">
+
+            <TextView
+                    android:id="@+id/time_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="00:00:00"/>
+            <Button
+                    android:id="@+id/play"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/stop"
+                    android:layout_above="@id/time_play"/>
+
+            <SeekBar
+                    android:id="@+id/seekbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toLeftOf="@+id/scale"
+                    android:layout_toRightOf="@id/play"
+                    android:progressDrawable="@drawable/po_seekbar"
+                    android:thumb="@drawable/po_seekbar"
+                    />
+
+            <TextView
+                    android:id="@+id/time_totle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="00:00:00"/>
+
+            <Button
+                    android:id="@+id/scale"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_above="@id/time_totle"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/full_screen"/>
+        </RelativeLayout>
+
+        <FrameLayout
+                android:id="@+id/operation_volume_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:padding="0dip"
+                android:visibility="invisible">
+
+            <ImageView
+                    android:id="@+id/operation_bg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_volumn_bg"/>
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:paddingBottom="25dip">
+
+                <ImageView
+                        android:id="@+id/operation_full"
+                        android:layout_width="94dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/video_num_bg"/>
+
+                <ImageView
+                        android:id="@+id/operation_percent"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:scaleType="matrix"
+                        android:src="@drawable/video_num_front"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+                android:id="@+id/rel_iv_course_info_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/iv_course_info_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/allcourse_cover_default"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4c000000"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/rel_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_video"
+                android:visibility="gone"
+                >
+
+            <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+            <TextView
+                    android:id="@+id/loading_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="23dp"
+                    android:text="视频加载中,请稍后..."
+                    android:textSize="16sp"
+                    />
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:src="@drawable/video_btn_play_load_error"
+                android:visibility="visible"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/course_info_base_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+        >
+
+    <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="互联网营销概论"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+    <TextView
+            android:id="@+id/tv_course_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:text="公开课"
+            android:textColor="#5a7dbc"
+            android:textSize="15sp"/>
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/tv_course_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:text="学校机构 :"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/view"
+            android:text="北京航空航天大学"
+            android:textColor="#5a7dbc"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_school_name"
+            android:layout_marginTop="10dp"
+            android:text="讲师:"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_instructor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_school_name"
+            android:layout_marginTop="10dp"
+            android:text="马建"
+            android:textColor="#5a7dbc"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_instructor_name"
+            android:layout_marginTop="10dp"
+            android:text="开课时间:"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_instructor_name"
+            android:layout_marginTop="10dp"
+            android:text="2013-12-28"
+            android:textColor="#5a7dbc"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_course_time"
+            android:layout_marginTop="10dp"
+            android:text="时长预估:"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_course_time_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_course_time"
+            android:layout_marginTop="10dp"
+            android:text="每天三小时"
+            android:textColor="#5a7dbc"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_course_time_about"
+            android:layout_marginTop="10dp"
+            android:text="课程编号:"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_course_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_course_time_about"
+            android:layout_marginTop="10dp"
+            android:text="北京航空航天大学"
+            android:textColor="#5a7dbc"
+            android:textSize="14sp"/>
+
+    <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"
+            android:layout_below="@id/tv_course_number"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    <TextView
+            android:id="@+id/tv_course_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:text="课程关键字 :"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tv_course_key_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_course_key"
+            android:layout_marginTop="10dp"
+            android:text="课程关键字 课程关键字课程关键字课程关键字课程关键字课程关键字"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_setting_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/loading_layout"/>
+
+    <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@drawable/bg_nav"
+                    android:gravity="center"
+                    android:text="@string/teacher_and_ta"
+                    android:textColor="@color/module_child_text"
+                    android:textSize="18sp"
+                    />
+
+            <com.kaikeba.common.widget.AllCoursesGridView
+                    android:id="@+id/gridview_structor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+            </com.kaikeba.common.widget.AllCoursesGridView>
+
+            <TextView
+                    android:id="@+id/tv_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@drawable/bg_nav"
+                    android:gravity="center"
+                    android:text="@string/users_student"
+                    android:textColor="@color/module_child_text"
+                    android:textSize="18sp"
+                    />
+
+            <com.kaikeba.common.widget.AllCoursesGridView
+                    android:id="@+id/gridview_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:paddingBottom="10dp"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+            </com.kaikeba.common.widget.AllCoursesGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

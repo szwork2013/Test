@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lms_item_selector"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+        >
+
+    <TextView
+            android:id="@+id/lms_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_module"
+            android:layout_marginLeft="23dp"
+            android:layout_centerVertical="true"
+            android:textColor="#1a1a1a"
+            android:singleLine="true"
+            android:textSize="15sp"
+            />
+    <ImageView
+            android:id="@+id/lms_course_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+</RelativeLayout>

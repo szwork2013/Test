@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_go_to_study"
+              android:orientation="vertical"
+              android:background="@color/button_study_bg"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="72dp">
+    <TextView
+            android:id="@+id/tv_go_study"
+            android:layout_width="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:text="@string/study_the_course"
+            android:layout_height="52dp"/>
+
+</LinearLayout>

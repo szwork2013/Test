@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--for 1280dp width-->
+
+    <!--main.xml-->
+    <dimen name="main_image_width">160dp</dimen>
+    <dimen name="main_image_height">80dp</dimen>
+    <dimen name="main_image_padding_top">26dp</dimen>
+    <dimen name="main_image_padding_bottom">17dp</dimen>
+    <dimen name="main_image_margin_left">38dp</dimen>
+    <dimen name="main_button_width">140dp</dimen>
+    <dimen name="main_button_height">54dp</dimen>
+    <dimen name="main_button_text_size">24sp</dimen>
+
+    <!--common_line.xml-->
+    <dimen name="line_width">1661dp</dimen>
+    <dimen name="line_margin_left">40dp</dimen>
+    <dimen name="line_text_size">21sp</dimen>
+
+    <!--common_item.xml-->
+    <dimen name="course_width">96dp</dimen>
+    <dimen name="course_height">60dp</dimen>
+    <dimen name="course_padding">16dp</dimen>
+    <dimen name="course_text_margin_left">13dp</dimen>
+    <dimen name="course_text_size">19sp</dimen>
+    <dimen name="course_small_text_size">16sp</dimen>
+
+    <!--course.xml-->
+    <dimen name="course_image_width">223dp</dimen>
+    <dimen name="course_image_height">136dp</dimen>
+    <dimen name="course_image_padding">13dp</dimen>
+    <dimen name="course_image_margin_top">7dp</dimen>
+    <dimen name="course_image_divider_width">4dp</dimen>
+    <dimen name="course_image_divider_margin">67dp</dimen>
+    <dimen name="course_module_name_margin_top">133dp</dimen>
+    <dimen name="course_module_name_text_size">27sp</dimen>
+    <dimen name="course_view_pager_width">520dp</dimen>
+    <dimen name="course_view_pager_margin_bottom">40dp</dimen>
+    <dimen name="course_view_pager_margin_top">27dp</dimen>
+
+    <!--tab_content_main-->
+    <dimen name="gallery_height">346dp</dimen>
+    <dimen name="gallery_margin_top">16dp</dimen>
+
+    <!--tab_more.xml-->
+    <dimen name="more_nav_width">333dp</dimen>
+    <dimen name="more_nav_padding_left">10dp</dimen>
+    <dimen name="button_width">180dp</dimen>
+    <dimen name="button_height">80dp</dimen>
+    <dimen name="button_padding_left">0dp</dimen>
+    <dimen name="button_margin_top">13dp</dimen>
+    <dimen name="button_text_size">21.3sp</dimen>
+    <dimen name="more_content_width">806dp</dimen>
+    <dimen name="more_content_height">592dp</dimen>
+    <dimen name="more_content_padding_left">66dp</dimen>
+
+    <!--custom_textview.xml-->
+    <dimen name="custom_textview_selected_font_size">24sp</dimen>
+    <dimen name="custom_textview_selected_padding">27dp</dimen>
+    <dimen name="custom_textview_font_size">21sp</dimen>
+    <dimen name="custom_textview_padding">13dp</dimen>
+    <dimen name="custom_textview_padding_left">33dp</dimen>
+
+    <!--public_apk.xml-->
+    <dimen name="public_apk_image_view_small_width">160dp</dimen>
+    <dimen name="public_apk_image_view_small_height">133dp</dimen>
+    <dimen name="public_apk_image_view_small_margin_top">64dp</dimen>
+    <dimen name="public_apk_image_view_small_margin_horizon">80dp</dimen>
+    <dimen name="public_apk_image_view_big_width">171dp</dimen>
+    <dimen name="public_apk_image_view_big_height">221dp</dimen>
+    <dimen name="public_apk_image_view_big_margin_top">80dp</dimen>
+    <dimen name="public_apk_image_view_big_margin_horizon">76dp</dimen>
+
+    <!--more_introduction.xml-->
+    <dimen name="more_introduction_blue_bar_width">8dp</dimen>
+    <dimen name="more_introduction_blue_bar_height">32dp</dimen>
+    <dimen name="more_introduction_blue_bar_margin_top">56dp</dimen>
+    <dimen name="more_introduction_blue_bar_margin_left">30dp</dimen>
+    <dimen name="more_introduction_title_margin_top">49dp</dimen>
+    <dimen name="more_introduction_title_margin_left">11dp</dimen>
+    <dimen name="more_introduction_title_text_size">33sp</dimen>
+    <dimen name="more_introduction_content_text_size">20sp</dimen>
+    <dimen name="more_introduction_content_margin_top">27dp</dimen>
+    <dimen name="more_introduction_content_margin_top1">34dp</dimen>
+    <dimen name="more_introduction_content_line_gap">9dp</dimen>
+    <dimen name="more_introduction_icon_width">55dp</dimen>
+    <dimen name="more_introduction_icon_text_size">19sp</dimen>
+    <dimen name="more_introduction_icon_text_margin_top">13dp</dimen>
+    <dimen name="more_introduction_icon_text_margin_left">20dp</dimen>
+    <dimen name="more_introduction_icon_margin_left">299dp</dimen>
+    <dimen name="more_introduction_icon_margin_top">52dp</dimen>
+    <dimen name="more_guide_logo_width">211dp</dimen>
+    <dimen name="more_guide_logo_height">272dp</dimen>
+    <dimen name="more_guide_logo_margin_right">60dp</dimen>
+    <dimen name="more_contact_small_title_text_size">24sp</dimen>
+    <dimen name="more_contact_margin_left">173dp</dimen>
+
+    <dimen name="tab_main_list_view_width">220dp</dimen>
+    <dimen name="tab_main_course_title_bg_height">43dp</dimen>
+
+    <dimen name="cart_width">160dp</dimen>
+    <dimen name="cart_height">140dp</dimen>
+    <dimen name="main_course_category_item_text_size">21.3sp</dimen>
+    <dimen name="main_course_category_padding_left">10dp</dimen>
+    <dimen name="view_course_list_view_width">405dp</dimen>
+    <dimen name="view_course_course_linear_layout_height">200dp</dimen>
+
+    <dimen name="view_course_course_card_width">341dp</dimen>
+    <dimen name="view_course_course_card_height">368dp</dimen>
+
+    <dimen name="view_course_course_card_desc_width">340dp</dimen>
+    <dimen name="view_course_course_card_desc_height">368dp</dimen>
+
+    <dimen name="view_course_course_card_image_view_height">192dp</dimen>
+
+    <dimen name="view_course_course_card_course_type_image_view_width">75dp</dimen>
+    <dimen name="view_course_course_card_course_type_image_view_height">32dp</dimen>
+
+    <dimen name="view_course_course_card_rating_star_width">21.3dp</dimen>
+
+    <dimen name="view_course_play_button_width">145.3dp</dimen>
+    <dimen name="view_course_play_button_height">58.7dp</dimen>
+
+    <dimen name="view_course_collect_button_width">129.3dp</dimen>
+    <dimen name="view_course_collect_button_height">58.7dp</dimen>
+
+    <dimen name="view_course_rating_bar_margin_top">24dp</dimen>
+    <dimen name="view_course_course_card_margin_top">94dp</dimen>
+    <dimen name="view_course_play_button_margin_top">100dp</dimen>
+
+    <dimen name="view_course_small_text_size">14sp</dimen>
+    <dimen name="view_course_normal_text_size">18.7sp</dimen>
+    <dimen name="view_course_medium_text_size">20sp</dimen>
+    <dimen name="view_course_large_text_size">21.3sp</dimen>
+    <dimen name="view_course_extra_large_text_size">24sp</dimen>
+    <dimen name="view_course_huge_text_size">26.7sp</dimen>
+    <dimen name="view_course_card_margin_left">40dp</dimen>
+
+    <dimen name="view_course_relational_recommand_margin_bottom">4dp</dimen>
+    <dimen name="view_course_video_list_margin_right">40dp</dimen>
+    <dimen name="view_course_play_record_margin_bottom">25dp</dimen>
+
+    <dimen name="view_course_video_list_item_height">128dp</dimen>
+    <dimen name="view_course_video_list_item_padding">34dp</dimen>
+    <dimen name="view_course_video_list_item_padding2">4dp</dimen>
+    <dimen name="view_course_video_list_last_play_record_text_view_margin_top">8dp</dimen>
+    <dimen name="tab_more_list_view_width">187dp</dimen>
+    <dimen name="tab_more_guide_course_intro_text_view_left_width">300dp</dimen>
+    <dimen name="tab_more_guide_course_intro_text_view_right_width">230dp</dimen>
+
+    <dimen name="tab_more_icon_below_text_size">27sp</dimen>
+    <dimen name="tab_more_qrcode_below_text_size">19sp</dimen>
+
+    <dimen name="tab_more_vertical_line_height">110dp</dimen>
+    <dimen name="tab_more_vertical_line_margin_left">90dp</dimen>
+
+    <dimen name="tab_main_course_category_list_view_item_height">60dp</dimen>
+    <dimen name="view_course_teacher_text_view_margin_top">14dp</dimen>
+    <dimen name="view_course_teacher_text_view_margin_left">16dp</dimen>
+
+    <dimen name="view_course_video_list_view_item_image_width">16dp</dimen>
+    <dimen name="view_course_video_list_view_item_last_watch_point_margin_left">26dp</dimen>
+    <dimen name="view_course_video_list_view_margin_right">10dp</dimen>
+    <dimen name="view_course_watch_to_where_image_width">14dp</dimen>
+
+    <!-- course card view-->
+    <dimen name="small_size_rating_start_width">10.7dp</dimen>
+
+    <dimen name="small_size_heart1_width">29.3dp</dimen>
+    <dimen name="small_size_heart2_width">40dp</dimen>
+
+    <dimen name="top_view_padding_left">16dp</dimen>
+    <dimen name="top_view_padding_right">16dp</dimen>
+    <dimen name="top_view_padding_top">5.3dp</dimen>
+    <dimen name="top_view_padding_bottom">5.3dp</dimen>
+
+    <dimen name="large_size_card_width">240dp</dimen>
+    <dimen name="large_size_card_height">150dp</dimen>
+    <dimen name="large_size_rating_start_width">20dp</dimen>
+
+    <dimen name="large_size_font_size_focused">26.7sp</dimen>
+    <dimen name="large_size_heart1_width">29.3dp</dimen>
+    <dimen name="large_size_heart2_width">40dp</dimen>
+
+    <dimen name="card_padding">2.7dp</dimen>
+    <dimen name="bottom_view_container_padding_left_right">16dp</dimen>
+    <dimen name="large_top_view_container_height">53.3dp</dimen>
+    <dimen name="rating_star_margin_right">2.7dp</dimen>
+    <dimen name="smaller_size_card_top_view_padding_left_focuse">13.3dp</dimen>
+    <dimen name="smaller_size_card_ratting_bar_size">10.7dp</dimen>
+
+    <dimen name="image_padding_left_right_top">2.7dp</dimen>
+
+    <dimen name="gallery_item_spacing">64dp</dimen>
+
+    <dimen name="view_course_rating_bar_margin_bottom">20dp</dimen>
+
+    <!-- userful item -->
+
+    <dimen name="large_card_item_padding">10.6dp</dimen>
+    <dimen name="large_card_item_margine">1.3dp</dimen>
+    <dimen name="main_tab_padding_left_right">24dp</dimen>
+    <dimen name="card_item_margin_top">26.6dp</dimen>
+
+    <dimen name="small_size_card_width">200dp</dimen>
+    <dimen name="small_size_card_height">125dp</dimen>
+
+    <dimen name="smaller_size_card_width">154dp</dimen>
+    <dimen name="smaller_size_card_height">90.6dp</dimen>
+    <dimen name="smaller_size_card_top_view_height">38.6dp</dimen>
+    <dimen name="small_top_view_container_height">53.7dp</dimen>
+    <dimen name="smaller_size_card_top_view_padding_left">10.6dp</dimen>
+    <dimen name="top_view_padding_left_right">10.6dp</dimen>
+    <dimen name="smaller_size_card_text_size">14.6sp</dimen>
+    <dimen name="small_size_font_size_focused">20.6sp</dimen>
+    <dimen name="view_recommend_margin_left">26dp</dimen>
+    <dimen name="tab_main_list_view_divider_margin_top">53dp</dimen>
+
+    <dimen name="small_size_card_width_from_favor">240dp</dimen>
+    <dimen name="small_size_card_height_from_favor">156dp</dimen>
+
+    <dimen name="gallery_indicator_circle_width">24dp</dimen>
+
+    <dimen name="video_logo_width">370dp</dimen>
+    <dimen name="video_logo_height">200dp</dimen>
+</resources>

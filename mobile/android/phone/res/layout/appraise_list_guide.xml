@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/course_bg_color"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+        >
+
+    <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="评价此课程"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/standard_blue"/>
+
+    <ListView
+            android:id="@+id/appraise_list"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:cacheColorHint="@color/course_bg_color"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content"/>
+
+    <include
+            layout="@layout/loading_layout"/>
+    <include
+            android:visibility="gone"
+            layout="@layout/loading_fial_layout"/>
+
+</RelativeLayout>

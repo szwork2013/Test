@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/more_content_padding_left"
+                android:orientation="vertical">
+
+    <ImageView android:id="@+id/more_blue_bar"
+               android:layout_width="@dimen/more_introduction_blue_bar_width"
+               android:layout_height="@dimen/more_introduction_blue_bar_height"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_blue_bar"
+               android:layout_marginTop="@dimen/more_introduction_blue_bar_margin_top"
+               android:layout_marginLeft="@dimen/more_introduction_blue_bar_margin_left"
+            />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="开课吧导学课"
+              android:textColor="@color/more_tag_font_color"
+              android:textSize="@dimen/more_introduction_title_text_size"
+              android:id="@+id/more_tab_title"
+              android:layout_marginLeft="@dimen/more_introduction_title_margin_left"
+              android:layout_marginTop="@dimen/more_introduction_title_margin_top"
+              android:layout_toRightOf="@id/more_blue_bar"
+            />
+
+    <TextView android:id="@+id/more_text_line_1"
+              android:layout_width="@dimen/tab_more_guide_course_intro_text_view_left_width"
+              android:lineSpacingExtra="12dp"
+              android:lines="4"
+              android:layout_height="wrap_content"
+              android:text="开课吧导学课，创意设计、寓教于乐，以学生为课堂主角，引导学生自主学习、合作探究，使学生乐于学习，学会学习，高效高质量的掌握所学知识。"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_alignLeft="@id/more_blue_bar"
+              android:layout_below="@id/more_blue_bar"
+              android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            />
+
+
+    <TextView android:id="@+id/more_text_line_2"
+              android:layout_width="@dimen/tab_more_guide_course_intro_text_view_right_width"
+              android:layout_height="wrap_content"
+              android:lineSpacingExtra="12dp"
+              android:layout_below="@+id/more_blue_bar"
+              android:text="导学服务贯穿始终，如学前能力评估，学中疑难解答，学后认证发放、学分置换等"
+              android:textSize="@dimen/more_introduction_content_text_size"
+              android:textColor="@color/more_tag_font_color"
+              android:layout_marginLeft="56dp"
+              android:lines="4"
+              android:layout_toRightOf="@+id/more_text_line_1"
+              android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            />
+
+
+    <ImageView android:id="@+id/more_logo"
+               android:layout_width="@dimen/more_guide_logo_width"
+               android:layout_height="@dimen/more_guide_logo_height"
+               android:scaleType="fitXY"
+               android:src="@drawable/more_logo"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginRight="60dp"
+               android:layout_marginBottom="30dp"
+            />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="@dimen/more_introduction_content_margin_top"
+            android:src="@drawable/vertical_line"
+            android:layout_toRightOf="@+id/more_text_line_1"
+            android:layout_below="@+id/more_tab_title"
+            android:layout_marginLeft="25dp"/>
+
+
+</RelativeLayout>

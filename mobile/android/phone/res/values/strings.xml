@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_all_courses">我的课程</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    <string name="menu_settings">设置</string>
+    <string name="app_name">开课吧</string>
+    <string name="all_courses">全部课程</string>
+    <string name="account">账户</string>
+    <string name="query_course">查看课程</string>
+    <string name="signin_signup">登录</string>
+    <string name="signout">注销当前账号</string>
+    <string name="my_courses">我的课程</string>
+    <string name="signin">去登录</string>
+    <string name="signup">注册</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="username">用户名</string>
+    <string name="hint_username">用户名3~18位字符</string>
+    <string name="realname">真实姓名</string>
+    <string name="add_avatar">添加头像</string>
+    <string name="signup_compl">完成注册</string>
+    <string name="edit_profile">修改资料</string>
+    <string name="edit_avatar">更换头像</string>
+    <string name="success_change">完成修改</string>
+
+    <string name="course_info">基本信息</string>
+    <string name="instructor_info">课程简介</string>
+    <string name="course_arrange">课程安排</string>
+    <string name="assignment">作业</string>
+    <string name="quiz">测验</string>
+    <string name="discussion">讨论</string>
+
+    <string name="free_trial">免费试用</string>
+    <string name="payment">立即购买</string>
+
+    <string name="course_module">单元</string>
+    <string name="course_announment">通告</string>
+    <string name="course_users">人员</string>
+
+    <string name="profile">修改个人信息</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_me">关于我们</string>
+    <string name="star_me">评价一下</string>
+    <string name="check_latest">检查更新</string>
+    <string name="version_name">版本号</string>
+    <string name="user_center">个人中心</string>
+    <string name="down_load_nowifi">仅wifi环境下载</string>
+    <string name="push_message">消息推送</string>
+
+    <string name="from_album">　相册</string>
+    <string name="from_camera">　拍照</string>
+
+    <string name="go_mycourse">您还没有自己的课程哦！去全部课程逛逛吧~~</string>
+
+    <string name="moduleItemIndictor">单元二级菜单指示图标</string>
+
+
+    <string name="go_login">去登录</string>
+    <string name="go_complete">完善个人信息</string>
+    <string name="add_portrait">添加头像</string>
+    <string name="go_look">去看看</string>
+    <string name="kaikeba_logo">开课吧logo</string>
+    <string name="hint_email">邮箱</string>
+    <string name="hint_sign_email">邮箱地址</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_sign_password">6~16位字符密码</string>
+    <string name="hint_truename">张三</string>
+    <string name="go_signup">去注册</string>
+    <string name="zhuxiao">注销当前账号</string>
+    <string name="exchange_course">兑换课程</string>
+
+    <string name="regist">注册</string>
+    <string name="login">登录</string>
+    <string name="go_regist">立即注册</string>
+    <string name="update_portrait">修改头像</string>
+    <string name="forget_pwd">忘记密码?</string>
+    <string name="get_pwd">找回密码</string>
+    <string name="send_email">立即发送邮件</string>
+    <string name="account_have_true">已有开课吧的账户</string>
+    <string name="account_have_false">还没有开课吧的账户?</string>
+    <string name="error_message">邮箱填写不符合格式，请修改后再试！</string>
+
+    <string name="load_manager">下载中心</string>
+    <string name="load_edit">编辑</string>
+    <string name="load_finish">完成</string>
+    <string name="finish">完成</string>
+    <string name="load_all_stop">全部暂停</string>
+    <string name="load_all_start">全部开始</string>
+    <string name="load_check_all">全选</string>
+    <string name="load_delete_check">删除</string>
+    <string name="loading">正在加载页面，请稍候...</string>
+    <string name="load">下载</string>
+    <string name="share">分享</string>
+    <string name="appraise">评价</string>
+    <string name="collect">收藏</string>
+    <string name="study_the_course">学习此课程</string>
+
+    <string name="my_micro">我的微专业</string>
+    <string name="my_open_course">我的公开课</string>
+    <string name="my_guide_course">我的导学课</string>
+    <string name="my_collected_course">我的收藏</string>
+
+    <string name="micro_intro_official">以实战为导向，以就业为目的，获得权威认证，揍是介么简单！</string>
+    <string name="micro_intro_humor">一证儿在手，欧份儿不愁。学渣，让我来拯救你吧！</string>
+    <string name="find_course_humor">自从我学了这些课，贱贱地发现人类已经无法阻止我了…</string>
+    <string name="coc_standard">注册并学习导学课、申请证书并提供身份证明文件\n完成导学课下相关课程学习并通过考核方可获得导学课证书</string>
+
+    <!-- for test -->
+    <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius
+        lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci
+        faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend
+        risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit
+        sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor,
+        vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed
+        tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus
+        sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi
+        consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec
+        faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet
+        pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus
+        eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit
+        facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id
+        ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae
+        vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim
+        pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum
+        hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut
+        diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros
+        pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida
+        felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque
+        ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc
+        mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis
+        faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet
+        imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci
+        sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus.
+        Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque
+        eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.
+    </string>
+    <!--the third platform login -->
+    <string name="sns_warn">可以使用合作伙伴账号注册哦~</string>
+    <string name="weichat">新浪微博</string>
+    <string name="qq">QQ</string>
+    <string name="renren">人人网</string>
+    <!-- id as tag key -->
+    <string name="task_type">1</string>
+    <string name="task_infos">2</string>
+    <string name="position_in_videos">0</string>
+    <string name="watched_view_count">1</string>
+    <string name="update_tag">0</string>
+    <string name="find_more_course">查找更多课程</string>
+</resources>

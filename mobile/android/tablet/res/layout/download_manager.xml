@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_setting_bg">
+
+    <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav_unit">
+
+        <ImageButton
+                android:id="@+id/btn_togo"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:background="@drawable/all_course_menu"/>
+
+        <TextView
+                android:id="@+id/text_download"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/btn_togo"
+                android:layout_margin="10dp"
+                android:text="@string/download"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/text_unused_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/text_download"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/unused_space"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_unused_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/text_unused_space"
+                android:gravity="center"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/text_used_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_unused_space"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="@string/used_space"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_used_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/text_used_space"
+                android:gravity="center"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/download_manage"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_all_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/tv_manage"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:text="@string/all_pause"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/tv_all_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/tv_all_pause"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/all_start"
+                android:textColor="#3d454c"
+                android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/course_download_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rv"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            />
+</RelativeLayout>

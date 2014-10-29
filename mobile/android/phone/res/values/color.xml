@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main nav -->
+    <color name="txt_nav_btn_normal">#A0A0A0</color>
+    <color name="txt_nav_btn_selected">#B0B0B0</color>
+    <color name="txt_nav_account">#E0E0E0</color>
+    <!-- promo slider -->
+    <color name="txt_promo_course_title">#E0E0E0</color>
+    <color name="txt_promo_course_intro">#A0A0A0</color>
+    <color name="txt_promo_btn_open">#E0E0E0</color>
+    <color name="bg_promo_info">#E61A1A1A</color>
+    <!-- crouse panel -->
+    <color name="txt_crouse_panel_schoole">#FFFFFF</color>
+    <color name="txt_crouse_panel_crouse">#308ee3</color>
+    <color name="txt_crouse_panel_instructor_name">#FFFFFF</color>
+    <color name="txt_crouse_panel_instructor_title">#A0A0A0</color>
+    <color name="txt_crouse_panel_badge">#FFFFFF</color>
+    <color name="bg_course_panel_schoole">#B31A1A1A</color>
+    <!-- dialog -->
+    <color name="txt_dlg_title">#FFFFFF</color>
+    <color name="txt_dlg_btn_white">#FFFFFF</color>
+    <color name="txt_dlg_btn_gray">#505050</color>
+    <color name="txt_dlg_edit_placeholder">#808080</color>
+    <color name="txt_dlg_edit_tip">#505050</color>
+    <color name="txt_dlg_edit_show">#A0A0A0</color>
+    <color name="txt_popup_btn_title">#E0E0E0</color>
+    <!-- drawer -->
+    <color name="bg_drawer_bg">#80000000</color>
+    <color name="txt_drawer_course_name">#FFFFFF</color>
+    <color name="txt_drawer_course_startat">#BBBBBB</color>
+    <color name="txt_drawer_course_price">#FFFFFF</color>
+    <color name="txt_drawer_schoole_name">#FFFFFF</color>
+    <color name="txt_drawer_free_trial">#666666</color>
+    <color name="txt_drawer_payment">#FFFFFF</color>
+    <color name="txt_drawer_tab_title">#444444</color>
+    <!-- shadow -->
+    <color name="shadow_white">#F0FFFFFF</color>
+    <color name="shadow_black">#F0000000</color>
+    <!-- setting -->
+    <color name="txt_setting">#252525</color>
+    <color name="txt_setting_unavailable">#737380</color>
+    <color name="already_apply">#75bf00</color>
+    <color name="end_apply">#666666</color>
+    <color name="unknow_apply">#E59921</color>
+
+    <color name="lucency_bg">#00000000</color>
+    <color name="quiz_title">#333333</color>
+    <color name="question_text">#666666</color>
+    <color name="choose_text">#b2b2b2</color>
+    <color name="all_course_button_bg">#242424</color>
+    <color name="back_press_true">#292929</color>
+    <color name="back_press_false">#e6e6e6</color>
+
+    <color name="loading_gray">#333333</color>
+    <color name="course_bg_color">#f0f0f0</color>
+    <color name="second_title_bg_color">#008eec</color>
+    <color name="text_pressed">#008ccc</color>
+    <color name="text_normal">#ffff</color>
+    <color name="translucence">#7f000000</color>
+    <color name="appraise_text_pressed">#008eec</color>
+    <color name="appraise_text_normal">#666666</color>
+    <color name="expandable_group_pressed">#d3d7dc</color>
+
+    <color name="lms_item_normal">#ffffff</color>
+    <color name="lms_item_pressed">#f5f5f5</color>
+    <color name="title_bg">#008eec</color>
+    <color name="search_bg">#33000000</color>
+
+    <color name="task_unfinished1">#ffff7f00</color>
+    <color name="task_unfinished2">#fff85856</color>
+    <color name="task_finish">#ff8cca07</color>
+
+    <color name="gray">#c2c2cc</color>
+    <color name="yellow">#ffb725</color>
+    <color name="blue">#2aaff5</color>
+
+</resources>

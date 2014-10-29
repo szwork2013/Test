@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="KKBDownloadClass" representedClassName="KKBDownloadClass" syncable="YES">
+        <attribute name="classID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="classType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="KKBDownloadVideo" inverseName="whichClass" inverseEntity="KKBDownloadVideo" syncable="YES"/>
+    </entity>
+    <entity name="KKBDownloadVideo" representedClassName="KKBDownloadVideo" syncable="YES">
+        <attribute name="downloadPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tmpPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalBytesFile" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalBytesReaded" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whichClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KKBDownloadClass" inverseName="videos" inverseEntity="KKBDownloadClass" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KKBDownloadClass" positionX="-92" positionY="-286" width="128" height="103"/>
+        <element name="KKBDownloadVideo" positionX="99" positionY="-252" width="128" height="193"/>
+    </elements>
+</model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <bitmap android:src="@drawable/progress_bar_underside"/>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <bitmap android:src="@drawable/task_progress_bar_upside"/>
+    </item>
+
+</layer-list>

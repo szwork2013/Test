@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/main_background"
+              android:baselineAligned="false"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            >
+
+        <RelativeLayout
+                android:layout_width="@dimen/course_image_width"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/course_image_padding"
+                android:background="@color/white"
+                >
+
+            <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="@dimen/course_image_width"
+                    android:layout_height="@dimen/course_image_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/course_default"
+                    android:scaleType="centerCrop"/>
+
+            <TextView
+                    android:id="@+id/courseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/iv_cover"
+                    android:layout_below="@id/iv_cover"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/course_image_padding"
+                    android:paddingRight="@dimen/course_image_padding"
+                    android:layout_marginTop="@dimen/course_image_margin_top"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/course_text_size"/>
+
+            <TextView
+                    android:id="@+id/colledgeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/courseName"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/course_image_padding"
+                    android:paddingRight="@dimen/course_image_padding"
+                    android:singleLine="true"
+                    android:textColor="#8d8d8d"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/course_small_text_size"/>
+
+            <TextView
+                    android:id="@+id/tv_instructor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/colledgeName"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/course_image_padding"
+                    android:paddingRight="@dimen/course_image_padding"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#8d8d8d"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/course_small_text_size"/>
+
+            <TextView
+                    android:id="@+id/courseBreaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_instructor_name"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/course_image_padding"
+                    android:paddingRight="@dimen/course_image_padding"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#8d8d8d"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/course_small_text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        <View
+                android:layout_width="@dimen/course_image_divider_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/course_image_divider_margin"
+                android:layout_marginTop="@dimen/course_image_divider_margin"
+                android:background="@drawable/ll5_line"/>
+
+        <TextView
+                android:id="@+id/tv_module_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/course_module_name_margin_top"
+                android:textColor="@color/white"
+                android:textSize="@dimen/course_module_name_text_size"/>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/vp_unit"
+                android:layout_width="@dimen/course_view_pager_width"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_module_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/course_view_pager_margin_bottom"
+                android:layout_marginTop="@dimen/course_view_pager_margin_top"/>
+
+        <ImageView
+                android:id="@+id/arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/vp_unit"
+                android:src="@drawable/arrow_left_disabled"/>
+
+        <ImageView
+                android:id="@+id/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/vp_unit"
+                android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+</LinearLayout>
