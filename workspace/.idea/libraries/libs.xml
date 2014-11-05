@@ -6,6 +6,7 @@
       <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/open_sdk_r3922_lite.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/mta-sdk-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nineoldandroids-2.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

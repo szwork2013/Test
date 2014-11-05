@@ -48,18 +48,20 @@ public class MyViewGroup extends ViewGroup {
         addView(l2);
         addView(l3);
         mScroll = new Scroller(context);
+        float velocity = mScroll.getCurrVelocity();
         touchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
-        Log.i(tag, "touch slop:" + touchSlop);
+//        Log.i(tag, "touch slop:" + touchSlop +" velocity:" + velocity);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        Log.i(tag, "<--- start measure -->");
         int widthMeasure = MeasureSpec.getSize(widthMeasureSpec);
         int heightMeasure = MeasureSpec.getSize(heightMeasureSpec);
-        Log.i(tag,"view group width = " + widthMeasure +" height = " + heightMeasure);
+//        Log.i(tag, "view group width = " + widthMeasure + " height = " + heightMeasure);
         setMeasuredDimension(widthMeasure, heightMeasure);
 
-        Log.i(tag,"on measure getWidth:" + getWidth() +" getHeight:" + getHeight());
+//        Log.i(tag, "on measure getWidth:" + getWidth() + " getHeight:" + getHeight());
         for (int i = 0; i < getChildCount(); i++) {
             getChildAt(i).measure(getWidth(), MainActivity.screenHeight);
         }
@@ -67,7 +69,8 @@ public class MyViewGroup extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        Log.i(tag, "on layout left:" + l + " top:" + t + " right:" + r + " bottom:" + b);
+//        Log.i(tag, "<--- start layout --->");
+//        Log.i(tag, "on layout left:" + l + " top:" + t + " right:" + r + " bottom:" + b);
         int startLeft = 0;
         int startTop = 10;
         for (int i = 0; i < getChildCount(); i++) {
@@ -81,23 +84,10 @@ public class MyViewGroup extends ViewGroup {
         }
     }
 
-    private void smoothScroll(int desX, int desY) {
-        if (mScroll.computeScrollOffset()) {//the animation is not finished
-            int scrollX = getScrollX();
-            int scrollY = getScrollY();
-            Log.i(tag, "scrollX:" + scrollX + "  scrollY:" + scrollY);
-            int curX = mScroll.getCurrX();
-            Log.i(tag, "curX:" + curX);
-            int deltaX = curX - scrollX;
-            Log.i(tag, "curX:" + curX + " curY:" + mScroll.getCurrY());
-            mScroll.startScroll(scrollX, 0, deltaX, 0);
-            invalidate();//refresh the view
-        }
-    }
-
     @Override
     public void computeScroll() {
         super.computeScroll();
+        Log.i(tag, "<--- compute scroll --->");
         // 如果返回true，表示动画还没有结束
         // 因为前面startScroll，所以只有在startScroll完成时 才会为false
         if (mScroll.computeScrollOffset()) {
@@ -109,8 +99,9 @@ public class MyViewGroup extends ViewGroup {
 
             //刷新View 否则效果可能有误差
             postInvalidate();
-        } else
+        } else {
             Log.i("sjyin", "have done the scoller -----");
+        }
     }
 
     private float startX;
@@ -124,6 +115,19 @@ public class MyViewGroup extends ViewGroup {
     private int curScreen = 0;
 
     @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        switch (ev.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                break;
+            case MotionEvent.ACTION_MOVE:
+                break;
+            case MotionEvent.ACTION_UP:
+                break;
+        }
+        return super.onInterceptTouchEvent(ev);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         super.onTouchEvent(event);
 
@@ -135,6 +139,7 @@ public class MyViewGroup extends ViewGroup {
         // the coordinate of the pointer
         float x = event.getX();
         float y = event.getY();
+        Log.i(tag,"<-- on touch --> x:" + x +" y:"+y);
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -171,7 +176,7 @@ public class MyViewGroup extends ViewGroup {
                 break;
         }
 
-        return false;
+        return true;
     }
 
     private void snapToDes() {

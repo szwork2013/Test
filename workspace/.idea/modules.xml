@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/android-badgeview-dev/android-badgeview-dev.iml" filepath="$USER_HOME$/Downloads/android-badgeview-dev/android-badgeview-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/workspace.iml" filepath="$PROJECT_DIR$/workspace.iml" />
     </modules>
   </component>

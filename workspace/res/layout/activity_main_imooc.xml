@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_frame_background">
+
+    <com.imooc.qq_slide_menu.widget.MyHorizontalScrollView
+            xmlns:mooc="http://schemas.android.com/apk/res/com.example.myapp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            mooc:rightPadding="150dp"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <include
+                    layout="@layout/left_menu"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/qq"/>
+        </LinearLayout>
+    </com.imooc.qq_slide_menu.widget.MyHorizontalScrollView>
+</RelativeLayout>
